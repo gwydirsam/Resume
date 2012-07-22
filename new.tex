@@ -1,338 +1,419 @@
-%!TEX TS-program = xelatex
-%!TEX encoding = UTF-8 Unicode
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
 
 \documentclass[margin,line]{res}
 \usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{enumerate}
 \usepackage{url}
 \makeatletter
 \def\url@leostyle{
-\@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
 \makeatother
 \urlstyle{leo}
 
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
-%\setromanfont[Mapping=tex-text]{Hoefler Text}
+% \setromanfont[Mapping=tex-text]{Hoefler Text}
 
 \color{black}
 
-\oddsidemargin -.30in
+\oddsidemargin -.70in
 \evensidemargin -.70in
-\topmargin -0.75in
-\textwidth=6.0in
+\topmargin -0.45in
+\textwidth=6.6in
 \itemsep=0in
-  \parsep=0in
+\parsep=0in
 
-  \newenvironment{list1}{
-    \begin{list}{\ding{113}}{%
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
       \setlength{\itemsep}{0in}
-        \setlength{\parsep}{0in} \setlength{\parskip}{0in}
-        \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
-    \setlength{\leftmargin}{0.17in}}}{\end{list}}
-    \newenvironment{list2}{
-      \begin{list}{$\bullet$}{%
-        \setlength{\itemsep}{0in}
-          \setlength{\parsep}{0in} \setlength{\parskip}{0in}
-          \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
       \setlength{\leftmargin}{0.2in}}}{\end{list}}
 
 
-      \begin{document}
-      \name{{\color{WildStrawberry}Sam Winborn Gwydir}\vspace*{.1in}}
-      {\color{WildStrawberry}
-        \begin{resume}
-          \color{black}
-          {\color{WildStrawberry}
-          \section{\sc Contact Information}}
-          \vspace{-.13in}
-          \hspace{-.14in}
-          \begin{tabular}{p{4in}@{} r @{{\em :}}p{5in}} 
-            \multicolumn{2}{r}{} \\
-            Sam Gwydir& {\it Cell}& \hspace{.2cm}(713) 446-0367\\            
-  13418 Pinerock Lane & {\it Home}& \hspace{.2cm}(713) 722-7579\\
-Houston, Texas, 77079 & {\it E-mail}& \hspace{.2cm}Sam.Gwydir@gmail.com\\
-          \end{tabular}
+\begin{document}
+\name{{\fontsize{28pt}{30pt}\selectfont {\color{WildStrawberry}Sam ``Bubba'' Winborn Gwydir}}}
+\hfill
+\vspace*{-.45in}
+\begin{tabular}{r} 
+  Sam.Gwydir@gmail.com\\
+  713 446 0367\\            
+  13418 Pinerock Lane\\
+  Houston Texas 77079 
+\end{tabular}
 
-          {\color{WildStrawberry}
-          \section{\sc Professional Interests}}
-          \hspace{-.14in}
-          \vspace{-.13in}
-          \begin{tabular}{l l l l}
-            Audio Codecs & Sound Engineering & Human Interfaces & Web Development \\
-       Network Protocols & Productivity Software & Typesetting & Text Editors \\
-          \end{tabular}
+\vspace*{.1in}
+{\color{WildStrawberry}
+  \begin{resume}
+    \color{black}
+    
+    {\color{WildStrawberry}
+      \section{\sc Professional Interests}}
+    \hspace{-.14in}
+    \vspace{-.10in}
+    \begin{tabular}{l l l l}
+      Application Development & Programming Languages & UNIX & Sound Engineering \\
+      Text Editors & Typesetting &  Internet Legislation & Intellectual Property 
+    \end{tabular}
 
-          {\color{WildStrawberry}
-          \section{\sc Professional Experience}}
-          {\bf Web Developer} {\em The Path of Tea} \hfill {\bf  2011-Present}
-          %\\
-          %Migrated web store to Shopify from their custom system. The new platform is more user friendly and becuase of this has increased online sales. A new design enlivened the site and helped organize the many products to choose from.
+    %\vspace*{.10in}
+    {\color{WildStrawberry}
+      \section{\sc Professional Experience}}
+    {\bf Assistant} {\em Dr. William Bassichis (Texas A\& M University)} \hfill {\bf 2012} \ 
+    \\
+    \begin{tabular}{l l l l}
+      $\cdot$ \LaTeX{} & $\cdot$ \TeX{} & $\cdot$ Emacs & $\cdot$ Adobe Illustrator
+    \end{tabular}
+    \\
+    \hspace*{.14pt} 
+    Reformatting Don't Panic I, II \& III, the professor's Textbook
+    from \TeX{} to \LaTeX{} \\ and updating figures
 
-          {\bf Web Consultant} {\em Stratford Playhouse} \hfill {\bf  2011}
-          
-          %\\
-          %Discussed migrating the current website format to a custom written framework or use an exisiting WYSIWYG editor. Taught new board member how to use the website.
+    % (\url{https://github.com/Gwydir8/Liskow---Lewis-Email-Template})
+    
+    % {\bf Web Developer} {\em The Path of Tea} \hfill {\bf 2011} \ 
+    % \\
+    % Migrated to a Shopify backend for the website with a new design
+    % \\
+    % \begin{tabular}{l l l l}
+    %   $\cdot$ Shopify & $\cdot$ Ruby & $\cdot$ HAML/SASS
+    % \end{tabular}
+    % \vspace{-.13in}
+    % \\
+    % Migrated web store to Shopify from their custom system. The new platform is more user friendly and becuase of this has increased online sales. A new design enlivened the site and helped organize the many products to choose from.
 
-          {\bf Web Designer} {\em Lance Brown} \hfill {\bf 2011}
-          %\\
-          %Contracted to take an image of a email announcment for Liskow \& Lewis, a law firm located in Houston. I re-implemented the image in HTML and CSS. Though email uses regular HTML and CSS for content and layout respecivly, email clients do not adhere to the standards of those languages. Due to the irregularities between email clients, this became one of my more challenging projects. This email went out to about 2500 people, including the entire law firm, their families and clients.
-          %\\
-          \vspace{-.20in}
+    % (\url{thepathoftea.com})
 
-          (\url{https://github.com/Gwydir8/Liskow---Lewis-Email-Template})
+    {\bf Web Consultant} {\em Stratford Playhouse} \hfill {\bf 2010} \
+    \\
+    \begin{tabular}{l l l l}
+      $\cdot$ Squarespace  & $\cdot$ HTML/CSS
+    \end{tabular}
+    \\
+    \hspace*{.14pt} 
+    Created a Squarespace blog which hosts the playhouse's news,
+    photos and ticket sales
+    \vspace{-.13in}
+    
+    % \\
+    % Discussed migrating the current website format to a custom written framework or use an exisiting WYSIWYG editor. Taught new board member how to use the website.
+    % (\url{shsplayhouse.com})
 
-          {\bf Web Designer \& Photographer} {\em Julie King} \hfill {\bf  2010}
-          %\\
-          %Contracted to design a website to sell an area home. Coded website from scratch and photographed the house for an extensive gallery featured on the site. Was instructed in how to photograph houses by Houston-area graphic designer, Lance Brown (lancebrowndesign.com).
-          %\\
-          \vspace{-.20in}
+    {\bf Web Designer} {\em Lance Brown} \hfill %{\bf 2011}
+    % long % Contracted to take an image of a email announcment for Liskow \& Lewis, a law firm located in Houston. I re-implemented the image in HTML and CSS. Though email uses regular HTML and CSS for content and layout respecivly, email clients do not adhere to the standards of those languages. Due to the irregularities between email clients, this became one of my more challenging projects. This email went out to about 2500 people, including the entire law firm, their families and clients.
+    % short
+    \\
+    \begin{tabular}{l l l l}
+        $\cdot$ MailChimp $\cdot$ HTML/CSS
+    \end{tabular}
+    \\
+    \hspace*{.14pt} 
+    Created a table based layout for an email to Liskow \& Lewis'
+    clientele for an annual \\ get together.
+    \vspace{-.13in}
+    % \\
+    % \\
+    % \vspace{-.20in}
 
-          (\url{https://github.com/Gwydir8/13515-Myrtlea})
+    % (\url{github.com/Gwydir8/Liskow---Lewis-Email-Template})
 
-          \vspace{-.13in}
-          {\bf IT} {\em J \& E Construction Company} \hfill {\bf  2010-Present}
+    {\bf Web Designer \& Photographer} {\em Julie King} \hfill {\bf 2010} \ 
+    \\
+    \begin{tabular}{l l l l}
+      $\cdot$ HTML/CSS &
+    \end{tabular}
+    \\
+    \hspace*{.14pt} 
+    Created a website showcasing the sale of their house
+    % \\
+    % Contracted to design a website to sell an area home. Coded website from scratch and photographed the house for an extensive gallery featured on the site. Was instructed in how to photograph houses by Houston-area graphic designer, Lance Brown (lancebrowndesign.com).
+    % \\
+    % \vspace{-.13in}
+    % (\url{https://github.com/Gwydir8/13515-Myrtlea})
 
-          {\bf IT} {\em Superior Exterior} \hfill {\bf  2010-Present}
+    {\bf IT} {\em J \& E Construction Company} \hfill %{\bf 2010}
+    \vspace{-.13in}
 
-          {\bf Summer Intern} {\em FMC Technologies} \hfill  {\bf  2009}\\
-          %\\
-          %Tested new formula of rubber to cover RFID tags on manufactured parts. Transferred pump blueprints to new database. Worked with the team that invented the ``Hammerless Union,'' an in-place replacement for sledgehammers.
+    {\bf IT} {\em Superior Exterior} \hfill %{\bf 2010}
+    \vspace{-.13in}
 
-          {\color{WildStrawberry}
-          \vspace{-.13in}
-          \section{\sc Projects}}
-          \color{black}
-          {\bf Avril Six} {\em Programmer} \hfill {\bf 2011}\\
-          %\\
-          %Avril Six is part of a birthday present for my friend whose birthday is on april six. I sent her a large hard drive full of music, and I needed a neat way to show her the highlights -- so I made another Rails based website, using Heroku as a Rails server and Amazon S3 for storage. This was my first time using any sort of cloud hosting, and using Ruby's Gems made the intergration very simple.  \\
-          (\url{http://avrilsix.heroku.com})
+    {\bf Summer Intern} {\em FMC Technologies} \hfill {\bf 2009} \ 
+    \\
+    \hspace*{.14pt} 
+    Input blueprints into new documenting system 
+    % \\
+    % Tested new formula of rubber to cover RFID tags on manufactured parts. Transferred pump blueprints to new database. Worked with the team that invented the ``Hammerless Union,'' an in-place replacement for sledgehammers.
 
-          {\bf Lance Brown Design} {\em Programmer} \hfill {\bf 2011\\}
-          %\\
-          %Lance Brown is a Houston designer that I am interning with this summer. To get the internship I re-emplemented his website using up to date standards (HTML5/CSS3) and added database functionality using Rails. Maintaining his website is now much easier using a database to hold his portfolio. I also re-wrote the CSS using the Blueprint CSS framework to ease later modification.\\
-          (\url{http://lancebrowndesign.heroku.com})
+    %\vspace*{.10in}
+    {\color{WildStrawberry}
+      \vspace{-.13in}
+      \section{\sc Projects}}
+    \color{black}
+    {\bf Avril Six} {\em Programmer} \hfill {\bf 2011}
+    \\
+    \begin{tabular}{l l l l}
+      $\cdot$ Ruby on Rails
+    \end{tabular}
+    \\
+    \hspace*{.14pt} 
+      A website created as a present to a friend. A personalized
+      music recommendation \\ application.
+    % Avril Six is part of a birthday present for my friend whose birthday is on april six. I sent her a large hard drive full of music, and I needed a neat way to show her the highlights -- so I made another Rails based website, using Heroku as a Rails server and Amazon S3 for storage. This was my first time using any sort of cloud hosting, and using Ruby's Gems made the intergration very simple.  \\
+    % (\url{http://avrilsix.heroku.com})
+    \vspace{-.13in}
 
-          {\bf Objective-Tea} {\em Owner/Programmer} \hfill  {\bf 2010}\\
-          %\\
-          %Development of an online tea store. Using HTML, CSS, and Ruby through Shopify's Liquid templating language, I built my own storefront. I used Google Analytics and AdWords to monitor and A/B test different ideas. I coded a simple timer for Mac OS X in Objective-C with a nice alert for customers.\\ 
-          (\url{http://github.com/Gwydir8/Timer})
+    {\bf Lance Brown Design} {\em Programmer} \hfill %{\bf 2011}
+    \\
+    \begin{tabular}{l l l l}
+      $\cdot$ Ruby on Rails
+    \end{tabular}
+    \\
+    \hspace*{.14pt} 
+    Re-wrote the backend of his website using Ruby on Rails 
+    % \\
+    % Lance Brown is a Houston designer that I am interning with this summer. To get the internship I re-emplemented his website using up to date standards (HTML5/CSS3) and added database functionality using Rails. Maintaining his website is now much easier using a database to hold his portfolio. I also re-wrote the CSS using the Blueprint CSS framework to ease later modification.\\
+    % (\url{http://lancebrowndesign.heroku.com})
+    \vspace{-.13in}
 
-          {\bf Stratford Playhouse Website} {\em Designer} \hfill  {\bf 2009 - Present}\\
-          %\\
-          %Built Stratford Playhouse website, using Squarespace.com as a CMS. Used a modified template, HTML and CSS. Documented use of website. This site has been modified since my original work. I still act as support for this website.
-          %\\ 
-          (\url{http://www.shsplayhouse.com})
+    {\bf Objective-Tea} {\em Owner/Programmer} \hfill {\bf 2010}
+    \\
+    \begin{tabular}{l l l l}
+      $\cdot$ Shopify & $\cdot$ Ruby & $\cdot$ HTML/CSS
+    \end{tabular}
+    \\
+    \hspace*{.14pt} 
+    Sold tea online through my own store
+    % \\
+    % Development of an online tea store. Using HTML, CSS, and Ruby through Shopify's Liquid templating language, I built my own storefront. I used Google Analytics and AdWords to monitor and A/B test different ideas. I coded a simple timer for Mac OS X in Objective-C with a nice alert for customers.\\ 
+    % (\url{http://github.com/Gwydir8/Timer})
 
-          {\color{WildStrawberry}
-          \section{\sc Personal \\ Experience}}
-          \color{black}
-          \hspace{-.13in}
-          \begin{tabular}{l l l l}
-            Stratford Playhouse & Stratford Thespians & Student Council & Academy of Science \\
-            {\em Dance Captain} & {\em Office}        & {\em Officer}   & {\em Member}\\
-                                &                     &                                     & \\
-                  Varsity Choir & Senior Men          & Academy of Science & \\
-           {\em Section Leader} & {\em President}     & {\em Member}       & \\
-          \end{tabular}
+    % {\bf Stratford Playhouse Website} {\em Designer} \hfill {\bf 2009} \ 
+    % \\
+    % Built Stratford Playhouse website, using Squarespace.com as a CMS. Used a modified template, HTML and CSS. Documented use of website. This site has been modified since my original work. I still act as support for this website.
+    % \\ 
+    % (\url{http://www.shsplayhouse.com})
 
-          {\color{WildStrawberry}
-          \section{\sc Hobbies}}
-          \color{black}
-          \hspace{-.13in}
-          \begin{tabular}{l l l l}
-            Rock Climbing & Biking & Comedy & Modding Video Game Consoles \\
-                      Tea & French & Geocaching & Dancing \\
-          \end{tabular}
+    % \vspace*{.25in}
+    {\color{WildStrawberry}
+      \vspace{-.13in}
+      \section{\sc Technical \\ Skills}} 
+    \hspace{-.30in}
+    {\renewcommand{\arraystretch}{.6}
+      \renewcommand{\tabcolsep}{0.2cm}
+      \begin{tabular}{@{}p{1.528in}p{5.8in}}
+        & {\color{Black} Proficiency} {\color{Black!20!White} Familiarity}\\
+        & {\color{Black} Objective-C/C++/C } {\color{Black} Ruby } {\color{Black} Scheme } {\color{Black!20!White} ZSH/Bash} \\            
+        & {\color{Black} HTML/HAML }  {\color{Black} CSS/SASS }  {\color{Black} \LaTeX{}}\\
+        & {\color{Black} Cocoa}  {\color{Black!60!White} Ruby on Rails}  {\color{Black!20!White} FLTK }\\
+        & {\color{Black} Vim }  {\color{Black} Emacs } {\color{Black} Xcode }  {\color{Black!60!White} Photoshop }  {\color{Black!40!White} Mathematica }  {\color{Black!60!White} Regular Expressions } {\color{Black!40!White} Git }  {\color{Black!20!White} Illustrator }  {\color{Black!20!White} Matlab }\\
+        & {\color{Black} Mac OS X }  {\color{Black} Gentoo/Arch Linux }  {\color{Black!30!White} Windows }\\
+        & {\color{Black} Soldering }  {\color{Black} Analog \& Digital Circuit Design } {\color{Black} Schematics}  {\color{Black!60!White} Blueprints}\\       
+      \end{tabular}}
 
-          {\color{WildStrawberry}
-            \vspace{-.13in}
-          \section{\sc Technical \\ Skills}} 
-          \hspace{-.30in}
-          {\renewcommand{\arraystretch}{.6}
-            \renewcommand{\tabcolsep}{0.2cm}
-            \begin{tabular}{@{}p{1.528in}p{5.8in}}
-              & {\color{Black} High Proficiency} {\color{Black!20!White} Mild Proficiency}\\
-              & {\color{Black}C++/C }  {\color{Black!80!White} Ruby }  {\color{Black!60!White} Scheme }  {\color{Black!40!White} Objective-C} {\color{Black!20!White} ZSH/Bash}  {\color{Black!20!White} Python } {\color{Black!10!White} Haskell}\\            
-              & {\color{Black} HTML/HAML }  {\color{Black} CSS/SASS }  {\color{Black} \LaTeX{}}\\
-              & {\color{Black} Cocoa}  {\color{Black!60!White} Ruby on Rails}  {\color{Black!20!White} FLTK }\\
-              & {\color{Black} Vim }  {\color{Black} Emacs }  {\color{Black} Mutt} {\color{Black!60!White} Xcode }  {\color{Black!60!White} Photoshop }  {\color{Black!40!White} Mathematica }  {\color{Black!60!White} Regular Expressions } {\color{Black!60!White} Apache} {\color{Black!40!White} SQLite} {\color{Black!40!White} Git }  {\color{Black!20!White} Illustrator }  {\color{Black!20!White} Matlab }\\
-              & {\color{Black} Mac OS X }  {\color{Black} Gentoo/Arch Linux }  {\color{Black!30!White} Windows }\\
-              & {\color{Black} Soldering }  {\color{Black} Schematics}  {\color{Black!60!White} Blueprints}\\       
-          \end{tabular}}
+    % \vspace*{.25in}
+    {\color{WildStrawberry}
+      \section{\sc Personal \\ Experience}}
+    \color{black}
+    \hspace{-.13in}
+    \begin{tabular}{l l l l}
+      Data Structures \& Algorithms & C++ Language            & Stratford Playhouse & Academy of Science \\
+      {\em Tutor} \bf Fall 2012         & {\em Tutor} \bf Spring 2011
+      & {\em Dance Co-Captain} \bf 2010 & {\em Member} \bf 2009 \& 2010 \\
+    \end{tabular}
 
-          {\color{WildStrawberry}
-            \vspace{-.13in}
-          \section{\sc Education}}
-%{\bf University of Texas}, Austin, Texas USA\\
-%{\em (Potential Transfer)}\\
-%\vspace*{-.1in}
-%\begin{list1}
-%\item[] B.S., Computer Science, May, 2014 (expected degree and graduation) \hfill {\bf (Summer 2011 - 2014)}
-%\end{list1}
-%\vspace*{-.1in}
-
-          {\bf Texas A\&M University}, College Station, Texas USA \hfill {\bf 2010 - (Spring 2014)}\\
-          \vspace*{-.17in}
-          \begin{list1}
-          \item[] B.E., Computer Engineering, May, 2011 \hfill (GPA: 2.787)
-          \end{list1}
-          \vspace*{-.15in}
-
-          {\bf Carnegie Mellon University}, Pittsburgh, Pennsylvania USA \hfill {\bf Summer 2009}\\
-%{\em Pre-College Advanced Placement/Early Action, June - August 2009} 
-          \vspace*{-.17in}
-          \begin{list1}
-          \item[] Pre-College Advanced Placement/Early Action \hfill\\
-            \vspace{-.15in}
-%\hspace{-.14in}
-%    \begin{list2}
-%%\vspace*{.05in}
-%	\item[] Calculus I
-%	\item[] Electrical and Computer Engineering
-%    \end{list2}
-          \end{list1}
-%\vspace*{.05in}
-
-          \vspace*{-.165in}
-          {\bf Stratford High School}, Houston, Texas US \hfill {\bf 2006 - 2010}\\
-          \vspace*{-.165in}
-%{\em Department of Statistics} 
-
-%\begin{tabular}{l l}
-%{{\bf\em Senior Schedule}} &\\
-%Intro to Engineering	& \\	
-%Economics AP		& Theater IV\\   
-%Physics AP		& Calculus BC AP\\   
-%German I		& English IV AP\\   
-%\end{tabular}
-%\begin{list2}
-%\vspace*{.05in}
-%\item Dissertation Topic:  ``Nonstationary Covariance Models for
-%  Spatial Data and Regression Problems'' 
-%\item Dissertation Topic:  ``Hierarchical Models for Multiple Ratings
-%  in Performance-Based\\ \hspace*{1.23in} Student Assessments.'' 
-%\item Advisor:  Mark J. Schervish
-%\end{list2}
-%\vspace*{.05in}
-%\item[] M.S., Statistics,  May 2000
-
-
-%
-%{\bf Carleton College}, Northfield, Minnesota USA\\
-%%{\em Department of Mathematics and Statistics} 
-%\vspace*{-.1in}
-%\begin{list1}
-%\item[] B.A., Biology,  May, 1993
-%\end{list1}
-
-
-%\vspace*{-2.5mm}
-%NSF Vertical Integration of Research and Education in Statistics and
-%Mathematical Sciences\\ (VIGRE) teaching fellowship.
-%
-
-%\section{\sc Academic Experience}
-%{\bf Carnegie Mellon University}, Pittsburgh, Pennsylvania USA
-%
-%\vspace{-.3cm}
-%{\em Graduate Student} \hfill {\bf August, 1998 - present}\\
-%Includes current Ph.D.~research, Ph.D.~and Masters level coursework and
-%research/consulting projects.
-%
-%%\vspace{-.1cm}
-%{\em Instructor} \hfill {\bf May - June, 2002}\\
-%Co-taught graduate level course for the Master of Science in
-%Computational Finance program.  Shared responsibility for lectures, exams,
-%homework assignments, and  grades.  
-%\vspace*{.05in}Pre  
-%\begin{list2}
-%\item 46-731 Probability and Statistics, Summer 2002.
-%\end{list2}
-%
-%
-%%\vspace{-.1cm}
-%{\em NSF VIGRE Teaching Fellow} \hfill {\bf January - May, 2001}\\
-%Head teaching assistant.   
-%Duties included  shared administrative responsibilities with faculty
-%instructor, fielding of all student inquiries, and oversight of
-%graduate student teaching assistants and graders.
-%\vspace*{.05in}  
-%\begin{list2}
-%\item 36-217 Probability Theory and Random Processes, Spring 2001.
-%\end{list2}
-%
-%%\vspace{-.1cm}
-%{\em Teaching Assistant} \hfill {\bf August, 2001  - present}\\
-%Duties at various times have included 
-%office hours and leading weekly computer lab exercises.
-%
-%
-%
-%%\section{\sc Publications}
-%%Paciorek, C.J., J.S. Risbey, V. Ventura, and R.D.Rosen. 2002. Multiple indices of Northern Hemisphere Cyclone
-%%Activity, Winters 1949-1999. Journal of Climate 15:1573-1590.
-%%
-%%Paciorek, C.J., R. Condit, S.P. Hubbell, and R.B. Foster.  2000.
-%%The demographics of resprouting in tree and shrub species of a moist
-%%tropical forest.  Journal of Ecology 88:765-777.
-%%
-%%Paciorek, C.J., B.R. Moyer, R.A. Levin, and S.L. Halpern.  1995.
-%%Pollen consumption by hummingbird flower mite {\it Proctolaelaps
-%%  kirmsei} and possible fitness effects on {\it Hamelia patens}.
-%%Biotropica 27:258-262.  (author order determined by lot)     
-%%
-%%\section{\sc Papers in preparation}
-%%
-%%Ventura, V., C.J.jj Paciorek, and J.S. Risbey.  Controlling the proportion of falsely-rejected hypotheses when conducting multiple tests with geophysical data.
-%%
-%%Ickes, K., C.J. Paciorek, and S. Thomas.  Effects of wild pigs on
-%%forest demographic processes in Malaysia.
-%
+    {\color{WildStrawberry}
+      \section{\sc Hobbies}}
+    \color{black}
+    \hspace{-.13in}
+    \begin{tabular}{l l l l l}
+      Rock Climbing & Biking & Comedy & Modding Video Game Consoles & Writing\\
+      Tea & French & Geocaching & Dancing & Swimming\\
+    \end{tabular}
 
 
+    % \vspace*{.5in}
+    {\color{WildStrawberry}
+      \vspace{-.13in}
+      \section{\sc Education}}
+    % {\bf University of Texas}, Austin, Texas USA\\
+    % {\em (Potential Transfer)}\\
+    % \vspace*{-.1in}
+    % \begin{list1}
+    % \item[] B.S., Computer Science, May, 2014 (expected degree and graduation) \hfill {\bf (Summer 2011 - 2014)}
+    % \end{list1}
+    % \vspace*{-.1in}
+
+    {\bf Texas A\&M University} College Station Texas USA \hfill {\bf 2010 - (Spring 2014)}\\
+    \vspace*{-.17in}
+    \begin{list1}
+    \item[] B.E., Computer Engineering, May, 2014 \hfill (GPA: 3.287)
+    \end{list1}
+    \vspace*{-.15in}
+
+    {\bf Carnegie Mellon University} Pittsburgh Pennsylvania USA \hfill {\bf Summer 2009}\\
+    % {\em Pre-College Advanced Placement/Early Action, June - August 2009} 
+    \vspace*{-.17in}
+    \begin{list1}
+    \item[] Pre-College Advanced Placement/Early Action \hfill\\
+      \vspace{-.15in}
+      % \hspace{-.14in}
+      % \begin{list2}
+      %%   \vspace*{.05in}
+      %	\item[] Calculus I
+      %	\item[] Electrical and Computer Engineering
+      % \end{list2}
+    \end{list1}
+    % \vspace*{.05in}
+
+    \vspace*{-.165in}
+    {\bf Stratford High School} Houston Texas US \hfill {\bf 2006 - 2010}\\
+    \vspace*{-.165in}
+    % {\em Department of Statistics} 
+
+    % \begin{tabular}{l l}
+    %   {{\bf\em Senior Schedule}} &\\
+    %   Intro to Engineering	& \\	
+    %   Economics AP		& Theater IV\\   
+    %   Physics AP		& Calculus BC AP\\   
+    %   German I		& English IV AP\\   
+    % \end{tabular}
+    % \begin{list2}
+    %   \vspace*{.05in}
+    % \item Dissertation Topic:  ``Nonstationary Covariance Models for
+    %   Spatial Data and Regression Problems'' 
+    % \item Dissertation Topic:  ``Hierarchical Models for Multiple Ratings
+    %   in Performance-Based\\ \hspace*{1.23in} Student Assessments.'' 
+    % \item Advisor:  Mark J. Schervish
+    % \end{list2}
+    % \vspace*{.05in}
+    % \item[] M.S., Statistics,  May 2000
 
 
-%          \color{black}
-%          {\color{WildStrawberry}
-%          \section{\sc Personal Interests}}
-%          \hspace{-.14in}
-%          \begin{tabular}{l l l l l l l l}
-%            Travel & Tea & Cooking & DJing & Dancing & French & German & Japanese\\
-%          \end{tabular}
-%
-%          {\color{WildStrawberry}
-%          \section{\sc Personal\\Goals}}
-%          {\bf Travel The World}\\
-%          I was born near Dubai, United Arab Emirates, and moved to the United States shortly afterwards. All my life I have been traveling. In recent years I have explored the United States from California to New York, and been on three trips to Europe. With only four more continents to explore I plan to visit all before I settle down in one place -- but only if I have to settle.\\
-%          \\
-%          {\bf Become Tri-Lingual}\\
-%          Whether it means drawing up an idea, programming, or verbal, communication interests me. Because of this, and to facilitate my travel, I've long had a goal of learning at least two other languages. I've taken four years of French and have used it to get around France and book an apartment in Montmartre, Paris among other things. I'm currently learning the Japanese syllalibraries and planing on taking a class next semester.\\
-%          \\
-%          {\bf Start my own business}\\
-%          To facilitate longterm travel, I would need to make money while on the move. I hope to do this by working on web design and Ruby on Rails based sites over the internet. Afterall, why tie myself down to an office when all I need is a computer to do my job?\\
+    %   
+    %   {\bf Carleton College}, Northfield, Minnesota USA\\
+    %%   {\em Department of Mathematics and Statistics} 
+    %   \vspace*{-.1in}
+    %   \begin{list1}
+    %   \item[] B.A., Biology,  May, 1993
+    %   \end{list1}
+
+
+    %   \vspace*{-2.5mm}
+    %   NSF Vertical Integration of Research and Education in Statistics and
+    %   Mathematical Sciences\\ (VIGRE) teaching fellowship.
+    %   
+
+    %   \section{\sc Academic Experience}
+    %   {\bf Carnegie Mellon University}, Pittsburgh, Pennsylvania USA
+    %   
+    %   \vspace{-.3cm}
+    %   {\em Graduate Student} \hfill {\bf August, 1998 - present}\\
+    %   Includes current Ph.D.~research, Ph.D.~and Masters level coursework and
+    %   research/consulting projects.
+    %   
+    %%   \vspace{-.1cm}
+    %   {\em Instructor} \hfill {\bf May - June, 2002}\\
+    %   Co-taught graduate level course for the Master of Science in
+    %   Computational Finance program.  Shared responsibility for lectures, exams,
+    %   homework assignments, and  grades.  
+    %   \vspace*{.05in}Pre  
+    %   \begin{list2}
+    %   \item 46-731 Probability and Statistics, Summer 2002.
+    %   \end{list2}
+    %   
+    %   
+    %%   \vspace{-.1cm}
+    %   {\em NSF VIGRE Teaching Fellow} \hfill {\bf January - May, 2001}\\
+    %   Head teaching assistant.   
+    %   Duties included  shared administrative responsibilities with faculty
+    %   instructor, fielding of all student inquiries, and oversight of
+    %   graduate student teaching assistants and graders.
+    %   \vspace*{.05in}  
+    %   \begin{list2}
+    %   \item 36-217 Probability Theory and Random Processes, Spring 2001.
+    %   \end{list2}
+    %   
+    %%   \vspace{-.1cm}
+    %   {\em Teaching Assistant} \hfill {\bf August, 2001  - present}\\
+    %   Duties at various times have included 
+    %   office hours and leading weekly computer lab exercises.
+    %   
+    %   
+    %   
+    %%   \section{\sc Publications}
+    %%   Paciorek, C.J., J.S. Risbey, V. Ventura, and R.D.Rosen. 2002. Multiple indices of Northern Hemisphere Cyclone
+    %%   Activity, Winters 1949-1999. Journal of Climate 15:1573-1590.
+    %%   
+    %%   Paciorek, C.J., R. Condit, S.P. Hubbell, and R.B. Foster.  2000.
+    %%   The demographics of resprouting in tree and shrub species of a moist
+    %%   tropical forest.  Journal of Ecology 88:765-777.
+    %%   
+    %%   Paciorek, C.J., B.R. Moyer, R.A. Levin, and S.L. Halpern.  1995.
+    %%   Pollen consumption by hummingbird flower mite {\it Proctolaelaps
+    %%   kirmsei} and possible fitness effects on {\it Hamelia patens}.
+    %%   Biotropica 27:258-262.  (author order determined by lot)     
+    %%   
+    %%   \section{\sc Papers in preparation}
+    %%   
+    %%   Ventura, V., C.J.jj Paciorek, and J.S. Risbey.  Controlling the proportion of falsely-rejected hypotheses when conducting multiple tests with geophysical data.
+    %%   
+    %%   Ickes, K., C.J. Paciorek, and S. Thomas.  Effects of wild pigs on
+    %%   forest demographic processes in Malaysia.
+    %   
 
 
 
 
-%{\color{WildStrawberry}
-%\section{\sc References}
-%}
-%\vspace{-.13in}
-%\hspace{-.14in}
-%\begin{tabular}{ p{3in}@{} r @{{\em :}}p{5in}} 
-%\multicolumn{2}{r}{} \\
-%{\bf Tep Ungchusri}		& {\it Cell}&   \hspace{.2cm}(281) 686-5472\\            
-%{\em Summer Intern Mentor} 	& {\it Office}& \hspace{.2cm}(281) 260-2157\\
-%{FMC Technologies} 		& {\it E-mail}& \hspace{.2cm}Tep.Ungchusri@FMCti.com\\
-%\end{tabular}
-%
-%\vspace{-.13in}
-%\hspace{-.14in}
-%\begin{tabular}{p{3in}@{} r @{{\em :}}p{5in}}
-%\multicolumn{2}{r}{} \\
-%{\bf Rory Frazee} 		& {\it Cell}&   \hspace{.2cm}(281) 844-2791\\            
-%{\em Engineering Teacher}	& {\it Office}& \hspace{.2cm}(281) 560-7550\\
-%{Stratford High School} 	& {\it E-mail}& \hspace{.2cm}Rory.Frazee@SpringBranchISD.com\\
-%\end{tabular}
-        \end{resume}
-        \end{document}
+    %   \color{black}
+    %   {\color{WildStrawberry}
+    %   \section{\sc Personal Interests}}
+    %   \hspace{-.14in}
+    %   \begin{tabular}{l l l l l l l l}
+    %     Travel & Tea & Cooking & DJing & Dancing & French & German & Japanese\\
+    %   \end{tabular}
+    %   
+    %   {\color{WildStrawberry}
+    %   \section{\sc Personal\\Goals}}
+    %   {\bf Travel The World}\\
+    %   I was born near Dubai, United Arab Emirates, and moved to the United States shortly afterwards. All my life I have been traveling. In recent years I have explored the United States from California to New York, and been on three trips to Europe. With only four more continents to explore I plan to visit all before I settle down in one place -- but only if I have to settle.\\
+    %   \\
+    %   {\bf Become Tri-Lingual}\\
+    %   Whether it means drawing up an idea, programming, or verbal, communication interests me. Because of this, and to facilitate my travel, I've long had a goal of learning at least two other languages. I've taken four years of French and have used it to get around France and book an apartment in Montmartre, Paris among other things. I'm currently learning the Japanese syllalibraries and planing on taking a class next semester.\\
+    %   \\
+    %   {\bf Start my own business}\\
+    %   To facilitate longterm travel, I would need to make money while on the move. I hope to do this by working on web design and Ruby on Rails based sites over the internet. Afterall, why tie myself down to an office when all I need is a computer to do my job?\\
+
+
+
+
+    %   {\color{WildStrawberry}
+    %   \section{\sc References}
+    % }
+    %   \vspace{-.13in}
+    %   \hspace{-.14in}
+    %   \begin{tabular}{ p{3in}@{} r @{{\em :}}p{5in}} 
+    %     \multicolumn{2}{r}{} \\
+    %     {\bf Tep Ungchusri}		& {\it Cell}&   \hspace{.2cm}(281) 686-5472\\            
+    %     {\em Summer Intern Mentor} 	& {\it Office}& \hspace{.2cm}(281) 260-2157\\
+    %     {FMC Technologies} 		& {\it E-mail}& \hspace{.2cm}Tep.Ungchusri@FMCti.com\\
+    %   \end{tabular}
+    %   
+    %   \vspace{-.13in}
+    %   \hspace{-.14in}
+    %   \begin{tabular}{p{3in}@{} r @{{\em :}}p{5in}}
+    %     \multicolumn{2}{r}{} \\
+    %     {\bf Rory Frazee} 		& {\it Cell}&   \hspace{.2cm}(281) 844-2791\\            
+    %     {\em Engineering Teacher}	& {\it Office}& \hspace{.2cm}(281) 560-7550\\
+    %     {Stratford High School} 	& {\it E-mail}& \hspace{.2cm}Rory.Frazee@SpringBranchISD.com\\
+    %   \end{tabular}
+  \end{resume}
+\end{document}
