@@ -1,17 +1,4 @@
-\documentclass[margin,line]{res}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{multirow}
-\usepackage{amssymb}
-\usepackage{enumerate}
-\usepackage{url}
-\makeatletter
-\def\url@leostyle{
-\@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
-\makeatother
-\urlstyle{leo}
-
-%\usepackage{fontspec,xunicode}
-%\defaultfontfeatures{Mapping=tex-text}
+fontfeatures{Mapping=tex-text}
 % \setromanfont[Mapping=tex-text]{Hoefler Text}
 
 \color{black}
@@ -39,20 +26,26 @@
 
 \begin{document}
 %Bubba
-%\name{{\fontsize{28pt}{30pt}\selectfont {\color{WildStrawberry}Sam ``Bubba'' Winborn Gwydir}}}
-\name{{\fontsize{28pt}{30pt}\selectfont {\color{WildStrawberry}Sam Winborn Gwydir}}}
+%\name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam ``Bubba'' Winborn Gwydir}}}
+\name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam Winborn Gwydir}}}
 \hfill
 \vspace*{-.45in}
-\begin{tabular}{r r}
-Sam@SamGwydir.com & 13418 Pinerock Lane\\
-713 446 0367 & Houston Texas 77079
+\begin{tabular}{l r}
+sam.gwydir@gmail.com & 418 College Main, Apt. \#309\\
+(713) 446-0367 & College Station, Texas 77079
 \end{tabular}
 
 \vspace*{.1in}
-{\color{WildStrawberry}
+{\color{Black}
 \begin{resume}
+
+{\color{Black}
+  \section{\sc Objective}}
+Seeking a summer internship position that will provide an opportunity to
+contribute to important, real-world projects.
+
 \color{black}
-{\color{WildStrawberry}
+{\color{Black}
   \vspace{-.1in}
   \section{\sc Education}}
 % {\bf University of Texas}, Austin, Texas USA\\
@@ -63,11 +56,13 @@ Sam@SamGwydir.com & 13418 Pinerock Lane\\
 % \end{list1}
 % \vspace*{-.1in}
 
-{\bf Texas A\&M University} College Station Texas USA \hfill {\bf 2010 - (Spring 2015)}\\
+{\bf Texas A\&M University} College Station Texas USA \hfill {\bf May 2016} \ \\
 \vspace*{-.17in}
 \begin{tabular}{l l l}
-  \vspace{.15in}
-  B.E., Computer Engineering & B.E., Electrical Engineering & Minor, Mathematics
+%  B.S., Computer Engineering & B.E., Electrical Engineering & Minor, Mathematics
+  Bachelor of Science in Computer Engineering, Computer Science Track \\
+%Major GPR: 3.417 Cumulative GPR: 2.658
+  %Major GPR: 3.4 Cumulative GPR: 2.7
 \end{tabular}
 %\begin{list1}
 %\item[] B.E., Computer Engineering
@@ -75,68 +70,94 @@ Sam@SamGwydir.com & 13418 Pinerock Lane\\
 %\item[] Minor, Mathematics
 %%\item[] B.E., Computer Engineering, May, 2014 \hfill (GPA: 3.287)
 %\end{list1}
-\vspace*{.025in}
+%\vspace*{.025in}
 
-{\bf Carnegie Mellon University} Pittsburgh Pennsylvania USA \hfill {\bf \ Summer 2009}\\
-% {\em Pre-College Advanced Placement/Early Action, June - August 2009}
-\vspace*{-.17in}
-\begin{list1}
-\item[] Pre-College Advanced Placement \hfill\\
-  \vspace{-.15in}
-  % \hspace{-.14in}
-  % \begin{list2}
-  %%   \vspace*{.05in}
-  %	\item[] Calculus I
-  %	\item[] Electrical and Computer Engineering
-  % \end{list2}
-\end{list1}
-% \vspace*{.05in}
+%{\bf Carnegie Mellon University} Pittsburgh Pennsylvania USA \hfill {\bf \ Summer 2009}\\
+%% {\em Pre-College Advanced Placement/Early Action, June - August 2009}
+%\vspace*{-.17in}
+%\begin{list1}
+%%\item[] Pre-College Advanced Placement \hfill\\
+% % \vspace{-.15in}
+%  % \hspace{-.14in}
+%  % \begin{list2}
+%  %%   \vspace*{.05in}
+%  %	\item[] Calculus I
+%  %	\item[] Electrical and Computer Engineering
+%  % \end{list2}
+%\end{list1}
+%% \vspace*{.05in}
 
-\vspace*{-.165in}
-{\bf Stratford High School} Houston Texas US \hfill {\bf 2006 - 2010}\\
+%\vspace*{-.165in}
+%{\bf Stratford High School} Houston Texas US \hfill {\bf 2006 - 2010}\\
 
-\vspace*{-.10in}
-{\color{WildStrawberry}
-  \section{\sc Professional Interests}}
-\hspace{-.14in}
-\vspace{-.10in}
-\begin{tabular}{l l l l l}
-  Operating Systems & Programming Languages & Free Software & Text
-  Editors & Security  \\
-  Interface Design & Signal Processing& Compression & Encryption & Emulation
-\end{tabular}
+%\vspace*{-.10in}
+%{\color{Black}
+%  \section{\sc Professional Interests}}
+%\hspace{-.14in}
+%\vspace{-.10in}
+%\begin{tabular}{l l l l l}
+%  Operating Systems & Programming Languages & Free Software & Text
+%  Editors & Security  \\
+%  Interface Design & Signal Processing& Compression & Encryption & Emulation
+%\end{tabular}
 
-\vspace*{.25in}
-{\color{WildStrawberry}
-  \section{\sc Personal \\ Experience}}
+\vspace*{.20in}
+{\color{Black}
+  \vspace{-.13in}
+  \section{\sc Personal Projects}}
 \color{black}
-\hspace{-.13in}
-\begin{tabular}{l l l l}
-  ToastMasters & Programming for UNIX & Data Structs. \& Algrthms. & C++ Language \\
-  {\em Officer} \bf 2013 & {\em Tutor} \bf F2013 &    {\em Tutor} \bf F2012 - S2013         & {\em Tutor} \bf S2011 \\
+%{\bf Avril Six} {\em Programmer} \hfill {\bf 2011}
+%\\
+%\begin{tabular}{l l l l}
+%   Ruby on Rails
+%\end{tabular}
+%\\
+%\hspace*{.14pt}
+%  A website created as a present to a friend. A personalized
+%  music recommendation \\ application.
+% Avril Six is part of a birthday present for my friend whose birthday is on april six. I sent her a large hard drive full of music, and I needed a neat way to show her the highlights -- so I made another Rails based website, using Heroku as a Rails server and Amazon S3 for storage. This was my first time using any sort of cloud hosting, and using Ruby's Gems made the intergration very simple.  \\
+% (\url{http://avrilsix.heroku.com})
+%\vspace{-.13in}
+{\bf SamGwydir.Com} {\em System Administrator} \hfill {\bf 2012 - 2014} \
+\\
+\begin{tabular}{l l l l l l}
+  OpenBSD &  OpenVPN &  nginx &  OpenSSH & OpenSMTPd & Dovecot
 \end{tabular}
+\\
+My personal server, which besides acting as a test bed, hosts a VPN \\
+for my use, and will soon host my website and email. Currently down, \\
+ will be back up sometime Spring 2015.
+%
+%I chose OpenBSD \\
+%to explore BSDs and for it's focus on security and ``correctness''.
 
-\vspace*{.15in}
-{\color{WildStrawberry}
+{\bf iTerm2-mod} {\em  https://github.com/Gwydir8/iTerm2-Mod}  \
+\\
+A fork of iTerm2 with the ``badge'' moved to the bottom right and \\
+made about half as large as the upstream version.
+
+{\bf Github} {\em http://www.github.com/Gwydir8}  \
+
+\vspace*{.20in}
+{\color{Black}
   \vspace{-.10in}
   \section{\sc Technical \\ Skills}}
 \hspace{-.35in}
 {\renewcommand{\arraystretch}{1.25}
   \renewcommand{\tabcolsep}{0.175cm}
   \begin{tabular}{l l l}
-    & {\em Proficiency Descending} & \\
-    & {\bf Languages} Objective-C/C++/C Ruby Haskell ZSH/Bash Scheme \\
-    & {\bf Markup} HTML CSS \LaTeX{} Markdown Doc\TeX{}\\
+    %& {\em Proficiency Descending} & \\
+    & {\bf Languages} C/C++/Objective-C Bash Ruby \\ % Haskell Elisp Scheme \\
+    & {\bf Markup} HTML CSS Markdown \LaTeX{} Doc\TeX{}\\
     & {\bf Frameworks} Cocoa  Ruby on Rails \\
-    & {\bf Tools} Emacs Vim  Git  Regular Expressions Mathematica
-    Xcode InDesign \\
-    & {\bf OS} Mac OS X *NIX \& BSD (Gentoo, OpenBSD) Windows \\
+    & {\bf Tools} Emacs Vim  Git  Regular Expressions Mathematica Xcode \\
+    & {\bf OS} Mac OS X *NIX Windows \\
     & {\bf Skills} Soldering  Analog \& Digital Circuit Design  Schematics Blueprints\\
   \end{tabular}}
 
 
-\vspace*{.05in}
-{\color{WildStrawberry}
+\vspace*{.20in}
+{\color{Black}
   \section{\sc Professional Experience}}
 {\bf Assistant} {\em Dr. William Bassichis (Texas A{\&}M University)} \hfill {\bf 2012 - Present} \
 \\
@@ -164,56 +185,57 @@ documents for publishing in journals.
 
 % (\url{thepathoftea.com})
 
-{\bf Web Consultant} {\em Stratford Playhouse} \hfill {\bf 2010} \
-\\
-\begin{tabular}{l l l l}
-   Squarespace  &  HTML &  CSS
-\end{tabular}
-\\
-Created a Squarespace blog which hosts the playhouse's news,
-photos and \\ ticket sales.
-\vspace{-.13in}
+%{\bf Web Designer} {\em Lance Brown} \hfill {\bf 2011} \
+%% long % Contracted to take an image of a email announcment for Liskow \& Lewis, a law firm located in Houston. I re-implemented the image in HTML and CSS. Though email uses regular HTML and CSS for content and layout respecivly, email clients do not adhere to the standards of those languages. Due to the irregularities between email clients, this became one of my more challenging projects. This email went out to about 2500 people, including the entire law firm, their families and clients.
+%% short
+%\\
+%\begin{tabular}{l l l l}
+%     MailChimp &  HTML &  CSS
+%\end{tabular}
+%\\
+%Created a table based layout for an email to Liskow \& Lewis'
+%clientele for \\ an annual meeting.
+%\vspace{-.13in}
+%% \\
+%% \\
+%% \vspace{-.20in}
+
+% (\url{github.com/Gwydir8/Liskow---Lewis-Email-Template})
+
+% {\bf Web Consultant} {\em Stratford Playhouse} \hfill {\bf 2010} \
+% \\
+% \begin{tabular}{l l l l}
+%    Squarespace  &  HTML &  CSS
+% \end{tabular}
+% \\
+% Created a Squarespace blog which hosts the playhouse's news,
+% photos and \\ ticket sales.
+% \vspace{-.13in}
 
 % \\
 % Discussed migrating the current website format to a custom written framework or use an exisiting WYSIWYG editor. Taught new board member how to use the website.
 % (\url{shsplayhouse.com})
 
-{\bf Web Designer} {\em Lance Brown} \hfill %{\bf 2011}
-% long % Contracted to take an image of a email announcment for Liskow \& Lewis, a law firm located in Houston. I re-implemented the image in HTML and CSS. Though email uses regular HTML and CSS for content and layout respecivly, email clients do not adhere to the standards of those languages. Due to the irregularities between email clients, this became one of my more challenging projects. This email went out to about 2500 people, including the entire law firm, their families and clients.
-% short
-\\
-\begin{tabular}{l l l l}
-     MailChimp &  HTML &  CSS
-\end{tabular}
-\\
-Created a table based layout for an email to Liskow \& Lewis'
-clientele for \\ an annual meeting.
-\vspace{-.13in}
-% \\
-% \\
-% \vspace{-.20in}
 
-% (\url{github.com/Gwydir8/Liskow---Lewis-Email-Template})
+%{\bf Web Designer \& Photographer} {\em Julie King} \hfill {\bf 2010} \
+%\\
+%\begin{tabular}{l l}
+%   HTML &  CSS
+%\end{tabular}
+%\\
+%Created a website showcasing the their home put up for sale.
+%\vspace{-.13in}
+%% \\
+%% Contracted to design a website to sell an area home. Coded website from scratch and photographed the house for an extensive gallery featured on the site. Was instructed in how to photograph houses by Houston-area graphic designer, Lance Brown (lancebrowndesign.com).
+%% \\
+%% \vspace{-.13in}
+%% (\url{https://github.com/Gwydir8/13515-Myrtlea})
 
-{\bf Web Designer \& Photographer} {\em Julie King} \hfill {\bf 2010} \
-\\
-\begin{tabular}{l l}
-   HTML &  CSS
-\end{tabular}
-\\
-Created a website showcasing the their home put up for sale.
-\vspace{-.13in}
+% {\bf IT} {\em J \& E Construction Company} \hfill {\bf 2010 - Present}
 % \\
-% Contracted to design a website to sell an area home. Coded website from scratch and photographed the house for an extensive gallery featured on the site. Was instructed in how to photograph houses by Houston-area graphic designer, Lance Brown (lancebrowndesign.com).
-% \\
+% Miscellaneous technical support, from document creation to remote
+% backup and \\ cloud storage.
 % \vspace{-.13in}
-% (\url{https://github.com/Gwydir8/13515-Myrtlea})
-
-{\bf IT} {\em J \& E Construction Company} \hfill {\bf 2010 - Present}
-\\
-Miscellaneous technical support, from document creation to remote
-backup and \\ cloud storage.
-\vspace{-.13in}
 
 %{\bf IT} {\em Superior Exterior} \hfill {\bf 2010}
 %\vspace{-.13in}
@@ -224,45 +246,30 @@ Transferred data to new documenting system; Tested new formula for \\ RFID cover
 % \\
 % Tested new formula of rubber to cover RFID tags on manufactured parts. Transferred pump blueprints to new database. Worked with the team that invented the ``Hammerless Union,'' an in-place replacement for sledgehammers.
 
-%\vspace*{.10in}
-\vspace*{.15in}
-{\color{WildStrawberry}
-  \vspace{-.13in}
-  \section{\sc Personal Projects}}
-\color{black}
-%{\bf Avril Six} {\em Programmer} \hfill {\bf 2011}
+\vspace*{.20in}
+{\color{Black}
+  \section{\sc Personal \\ Experience}}
+{\bf Tutor} \hfill {\bf 2010 - Present} \
+\\
+\begin{tabular}{l l l}
+  C++ Language & Data Structures \& Algorithms & \LaTeX{}
+\end{tabular}
+
+\vspace{-.13in}
+{\bf Vice President of Public Relations} {\em TAMU ToastMasters} \hfill {\bf 2013} \
+\\
+Initiated mentorship program for established and potential members alike to practice speaking outside of meetings. This created a greater sense of cohesion among members.
+
+
+%{\bf TAMU Toastmasters} {\em Consultant} \hfill {\bf 2013 - Present} \
 %\\
-%\begin{tabular}{l l l l}
-%   Ruby on Rails
+%\begin{tabular}{l l l l l}
+%   Ruby on Rails  & HTML  & CSS  & Postfix  & Dovecot
 %\end{tabular}
 %\\
-%\hspace*{.14pt}
-%  A website created as a present to a friend. A personalized
-%  music recommendation \\ application.
-% Avril Six is part of a birthday present for my friend whose birthday is on april six. I sent her a large hard drive full of music, and I needed a neat way to show her the highlights -- so I made another Rails based website, using Heroku as a Rails server and Amazon S3 for storage. This was my first time using any sort of cloud hosting, and using Ruby's Gems made the intergration very simple.  \\
-% (\url{http://avrilsix.heroku.com})
+%Building a new website for TAMU Toastmasters based on Ruby on Rails and
+%\\ hosting the mailing list.
 %\vspace{-.13in}
-{\bf SamGwydir.Com} {\em System Administrator} \hfill {\bf 2012 - Present} \
-\\
-\begin{tabular}{l l l l l l l}
-   OpenBSD &  ksh &  OpenVPN &  nginx & OpenSMTPD
-   Dovecot &  Postfix
-\end{tabular}
-\\
-My personal server, which besides acting as a test bed, hosts a VPN \\
-for my use, and will soon host my website and email. I chose OpenBSD \\
-to explore BSDs and for it's focus on security and ``correctness''.
-\vspace{-.13in}
-
-{\bf TAMU Toastmasters} {\em Consultant} \hfill {\bf 2013 - Present} \
-\\
-\begin{tabular}{l l l l l}
-   Ruby on Rails  & HTML  & CSS  & Postfix  & Dovecot
-\end{tabular}
-\\
-Building a new website for TAMU Toastmasters based on Ruby on Rails and
-\\ hosting the mailing list.
-\vspace{-.13in}
 
 %{\bf Lance Brown Design} {\em Programmer} \hfill {\bf 2011} \
 %\\
@@ -297,7 +304,7 @@ Building a new website for TAMU Toastmasters based on Ruby on Rails and
 
 
 % \vspace*{.25in}
-% {\color{WildStrawberry}
+% {\color{Black}
 %   \section{\sc Hobbies}}
 % \color{black}
 % \hspace{-.13in}
@@ -404,14 +411,14 @@ Building a new website for TAMU Toastmasters based on Ruby on Rails and
 
 
 %   \color{black}
-%   {\color{WildStrawberry}
+%   {\color{Black}
 %   \section{\sc Personal Interests}}
 %   \hspace{-.14in}
 %   \begin{tabular}{l l l l l l l l}
 %     Travel & Tea & Cooking & DJing & Dancing & French & German & Japanese\\
 %   \end{tabular}
 %
-%   {\color{WildStrawberry}
+%   {\color{Black}
 %   \section{\sc Personal\\Goals}}
 %   {\bf Travel The World}\\
 %   I was born near Dubai, United Arab Emirates, and moved to the United States shortly afterwards. All my life I have been traveling. In recent years I have explored the United States from California to New York, and been on three trips to Europe. With only four more continents to explore I plan to visit all before I settle down in one place -- but only if I have to settle.\\
@@ -425,7 +432,7 @@ Building a new website for TAMU Toastmasters based on Ruby on Rails and
 
 
 
-%   {\color{WildStrawberry}
+%   {\color{Black}
 %   \section{\sc References}
 % }
 %   \vspace{-.13in}
