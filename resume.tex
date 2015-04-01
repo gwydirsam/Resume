@@ -1,4 +1,17 @@
-fontfeatures{Mapping=tex-text}
+\documentclass[margin,line,12pt]{res}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{url}
+\makeatletter
+\def\url@leostyle{
+\@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+
+%\usepackage{fontspec,xunicode}
+%\defaultfontfeatures{Mapping=tex-text}
 % \setromanfont[Mapping=tex-text]{Hoefler Text}
 
 \color{black}
@@ -147,7 +160,7 @@ made about half as large as the upstream version.
   \renewcommand{\tabcolsep}{0.175cm}
   \begin{tabular}{l l l}
     %& {\em Proficiency Descending} & \\
-    & {\bf Languages} C/C++/Objective-C Bash Ruby \\ % Haskell Elisp Scheme \\
+    & {\bf Languages} C/C++/Objective-C Bash Ruby Elisp \\ % Haskell Scheme \\
     & {\bf Markup} HTML CSS Markdown \LaTeX{} Doc\TeX{}\\
     & {\bf Frameworks} Cocoa  Ruby on Rails \\
     & {\bf Tools} Emacs Vim  Git  Regular Expressions Mathematica Xcode \\
