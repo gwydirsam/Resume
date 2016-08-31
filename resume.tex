@@ -1,9 +1,10 @@
-\documentclass[margin,line,12pt]{res}
+\documentclass[resmargin,line,12pt]{res}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{multirow}
 \usepackage{amssymb}
 \usepackage{enumerate}
 \usepackage{url}
+\usepackage[bottom=-1.0in]{geometry}
 \makeatletter
 \def\url@leostyle{
 \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
@@ -18,7 +19,8 @@
 
 \oddsidemargin -.70in
 \evensidemargin -.70in
-\topmargin -0.45in
+\topmargin -0.65in
+% \topmargin -0.75in
 \textwidth=6.6in
 \itemsep=0in
 \parsep=0in
@@ -63,7 +65,7 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
     %& {\em Proficiency Descending} & \\
     % & {\bf Languages} C/C++/Objective-C Bourne-Shell Ruby Python Lua \\
     % & {\bf Languages} \LaTeX{} Emacs-lisp Haskell Scheme Matlab\\
-    & C/C++/Objective-C Java Bourne-Shell Ruby Python Lua & \\
+    & C C++ Objective-C Ansible Bourne-Shell Ruby Python Java Lua & \\
     & \LaTeX{} Emacs-lisp Haskell Scheme Matlab & \\
     & ToastMasters & \\
     % & {\bf Markup} \LaTeX{} Doc\TeX{} HTML CSS Markdown \\
@@ -83,7 +85,7 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
   \vspace{-.1in}
   \section{\sc Education}}
 
-{\bf Texas A\&M University} College Station Texas USA \hfill {\bf (May 2017)} \ \\
+{\bf Texas A\&M University} College Station Texas USA \hfill {\bf May 2017} \ \\
 \vspace*{-.17in}
 \begin{tabular}{l l l}
   Bachelor of Science in Computer Engineering, Computer Science Track \\
@@ -117,6 +119,38 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 %  Editors & Security  \\
 %  Interface Design & Signal Processing& Compression & Encryption & Emulation
 %\end{tabular}
+
+\vspace*{.20in}
+{\color{Black}
+  \vspace{-.13in}
+  \section{\sc Experience}}
+\color{black}
+
+{\bf Groupon} Palo Alto California USA \hfill {\bf June 2016 - Present} \
+\\
+\begin{tabular}{l l l l l l l l}
+  FreeBSD & ZFS & MySQL & Postgres & Poudriere & R & Ansible & Shell
+\end{tabular}
+\\
+\vspace{-.16in}
+\begin{itemize}
+  \item Systems Engineering intern at Groupon working with FreeBSD-based database hosts.
+  \item Devised method of mirroring upstream packages with pkgng team members.
+  % \item Created an index for all FreeBSD related documentation across Github, confluence and elsewhere, allowing rapid information discovery for new and existing team members.
+    % \item Documented and indexed all FreeBSD information across internal services.
+  % \item Benchmarking upgraded FreeBSD system, ZFS and database settings to ensure minimal, if any, performance regression when updating database servers. Currently filesystem settings and mysql settings are done and have produced significant (8-10x) performance increase in MySQL setups.
+  % \item Benchmarked FreeBSD, ZFS and database settings
+  %   to minimize performance regression when upgrading.
+    \item Benchmarking produced significant (8-10x) performance increase in MySQL setups.
+    \item Created automated OS install image building process for automating regression tests.
+    \item Work with external consultant (iXsystems) to update
+      host provisioning system
+    % \item Open sourced many of our custom FreeBSD ports
+  % \item This project is done with Chris Findeisen ({\em github.com/atrus7})
+\end{itemize}
+% Simple UI modifications -- but good examples of working in large code-bases, \\
+% implementing simple features, and getting out without breaking other features.
+\vspace{-.10in}
 
 \vspace*{.20in}
 {\color{Black}
@@ -183,21 +217,21 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 % implementing simple features, and getting out without breaking other features.
 \vspace{-.10in}
 
-% {\bf Database Engine } {\em  https://github.com/gwydirsam/CSCE315-Project2-Mirror }  \
-{\bf Eugenics } {\em github.com/gwydirsam/Eugenics }  \
-\\
-\begin{tabular}{l l l l l l l} 
-  C++ & CMake & Google Test & GNU GetOpts & Python & matplotlib & Agile
-\end{tabular}
-\\
-\vspace{-.16in}
-\begin{itemize}
-  \item Eugenics is system to generate and visualize a genetic algorithm
-  \item The algorithm attempts to generate circuits from a truth table
-  \item Travis CI was used for continuous integration testing \`{a} la Agile
-  \item Created custom CMake/Shell scripts to build application and link libraries
-\end{itemize}
-\vspace{-.10in}
+% % {\bf Database Engine } {\em  https://github.com/gwydirsam/CSCE315-Project2-Mirror }  \
+% {\bf Eugenics } {\em github.com/gwydirsam/Eugenics }  \
+% \\
+% \begin{tabular}{l l l l l l l} 
+%   C++ & CMake & Google Test & GNU GetOpts & Python & matplotlib & Agile
+% \end{tabular}
+% \\
+% \vspace{-.16in}
+% \begin{itemize}
+%   \item Eugenics is system to generate and visualize a genetic algorithm
+%   \item The algorithm attempts to generate circuits from a truth table
+%   \item Travis CI was used for continuous integration testing \`{a} la Agile
+%   \item Created custom CMake/Shell scripts to build application and link libraries
+% \end{itemize}
+% \vspace{-.10in}
 
 % {\bf Database Engine } {\em  https://github.com/gwydirsam/CSCE315-Project2-Mirror }  \
 % {\bf Database Engine \& Blog } {\em  github.com/gwydirsam/CSCE315-DBMS }  \
@@ -227,9 +261,9 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 \\
 \vspace{-.16in}
 \begin{itemize}
-  \item Moved the per-tab label or ``badge'' to the bottom right
+  % \item Moved the per-tab label or ``badge'' to the bottom right
   \item Submitted Pull Request to iTerm2 Author (now issue \#3508)
-  \item The option to move the badge is now part of the version 4 milestone
+  % \item The option to move the badge is now part of the version 4 milestone
 \end{itemize}
 % Moved the iTerm2 ``badge'' to the bottom right and submitted a pull \\ 
 % request. The ability to change the location of the badge is now part \\
@@ -237,18 +271,18 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 \vspace{-.10in}
 
 % % {\bf emacs-mac-borderless} {\em https://github.com/gwydirsam/emacs-mac-borderless } \
-% {\bf emacs-mac-borderless} {\em github.com/gwydirsam/emacs-mac-borderless } \
-% \\
-% \begin{tabular}{l l}
-%   Objective-C & Emacs-Lisp
-% \end{tabular}
-% \\
-% \begin{itemize}
-%   \item Removed normal OS X cocoa border to match iTerm2's ``no title bar'' option
-%   \item Fixed bug where window did not respond to mouse clicks
-% \end{itemize}
-% % Simple UI modifications -- but good examples of working in large code-bases, \\
-% % implementing simple features, and getting out without breaking other features.
+{\bf emacs-mac-borderless} {\em github.com/gwydirsam/emacs-mac-borderless } \
+\\
+\begin{tabular}{l l}
+  Objective-C & Emacs-Lisp
+\end{tabular}
+\\
+\begin{itemize}
+  \item Removed normal OS X cocoa border to match iTerm2's ``no title bar'' option
+  \item Fixed bug where window did not respond to mouse clicks
+\end{itemize}
+% Simple UI modifications -- but good examples of working in large code-bases, \\
+% implementing simple features, and getting out without breaking other features.
 
 % {\bf stallman-emails} {\em https://github.com/gwydirsam/stallman-emails } \
 % \\
@@ -266,14 +300,14 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 \\
 \vspace{-.16in}
 \begin{itemize}
-  \item Added spacemacs icon to ``emacs-mac'' homebrew formula
-  \item Actively help users in IRC channel
+  % \item Added spacemacs icon to ``emacs-mac'' homebrew formula
+  % \item Actively help users in IRC channel
   \item Several small bug fixes and issues submitted
 \end{itemize}
 % I have made several contributions in the form of bug fixes and creating issues. \\
 % I actively help users in the IRC channel. I am also responsible for adding the \\
 % spacemacs icon as an option in the ``emacs-mac'' homebrew formula.
-\vspace{0.08in}
+\vspace{-0.10in}
 
 % {\bf Github} {\em https://www.github.com/gwydirsam}  \
 {\bf Github } {\em github.com/gwydirsam}  \
