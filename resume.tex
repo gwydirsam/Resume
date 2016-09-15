@@ -19,8 +19,8 @@
 
 \oddsidemargin -.70in
 \evensidemargin -.70in
-\topmargin -0.65in
-% \topmargin -0.75in
+% \topmargin -0.65in
+\topmargin -0.75in
 \textwidth=6.6in
 \itemsep=0in
 \parsep=0in
@@ -89,6 +89,7 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 \vspace*{-.17in}
 \begin{tabular}{l l l}
   Bachelor of Science in Computer Engineering, Computer Science Track \\
+  Minor in Mathematics \\
 \end{tabular}
 
 %{\bf Carnegie Mellon University} Pittsburgh Pennsylvania USA \hfill {\bf \ Summer 2009}\\
@@ -128,8 +129,8 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 
 {\bf Groupon} Palo Alto California USA \hfill {\bf June 2016 - Present} \
 \\
-\begin{tabular}{l l l l l l l l}
-  FreeBSD & ZFS & MySQL & Postgres & Poudriere & R & Ansible & Shell
+\begin{tabular}{l l l l l l l l l}
+  FreeBSD & ZFS & MySQL & Postgres & Jenkins & Poudriere & R & Ansible & Shell
 \end{tabular}
 \\
 \vspace{-.16in}
@@ -142,10 +143,11 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
   % \item Benchmarked FreeBSD, ZFS and database settings
   %   to minimize performance regression when upgrading.
     \item Benchmarking produced significant (8-10x) performance increase in MySQL setups.
-    \item Created automated OS install image building process for automating regression tests.
+    \item Automated OS image building for 
+      regression testing using Kyua, Jenkins and sysbench.
     \item Work with external consultant (iXsystems) to update
       host provisioning system
-    % \item Open sourced many of our custom FreeBSD ports
+    \item Open sourced many of our custom FreeBSD ports
   % \item This project is done with Chris Findeisen ({\em github.com/atrus7})
 \end{itemize}
 % Simple UI modifications -- but good examples of working in large code-bases, \\
@@ -218,20 +220,20 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 \vspace{-.10in}
 
 % % {\bf Database Engine } {\em  https://github.com/gwydirsam/CSCE315-Project2-Mirror }  \
-% {\bf Eugenics } {\em github.com/gwydirsam/Eugenics }  \
-% \\
-% \begin{tabular}{l l l l l l l} 
-%   C++ & CMake & Google Test & GNU GetOpts & Python & matplotlib & Agile
-% \end{tabular}
-% \\
-% \vspace{-.16in}
-% \begin{itemize}
-%   \item Eugenics is system to generate and visualize a genetic algorithm
-%   \item The algorithm attempts to generate circuits from a truth table
-%   \item Travis CI was used for continuous integration testing \`{a} la Agile
-%   \item Created custom CMake/Shell scripts to build application and link libraries
-% \end{itemize}
-% \vspace{-.10in}
+{\bf Eugenics } {\em github.com/gwydirsam/Eugenics }  \
+\\
+\begin{tabular}{l l l l l l l} 
+  C++ & CMake & Google Test & GNU GetOpts & Python & matplotlib & Agile
+\end{tabular}
+\\
+\vspace{-.16in}
+\begin{itemize}
+  \item Eugenics is system to generate and visualize a genetic algorithm
+  \item The algorithm attempts to generate circuits from a truth table
+  \item Travis CI was used for continuous integration testing \`{a} la Agile
+  \item Created custom CMake/Shell scripts to build application and link libraries
+\end{itemize}
+\vspace{-.10in}
 
 % {\bf Database Engine } {\em  https://github.com/gwydirsam/CSCE315-Project2-Mirror }  \
 % {\bf Database Engine \& Blog } {\em  github.com/gwydirsam/CSCE315-DBMS }  \
@@ -271,16 +273,18 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 \vspace{-.10in}
 
 % % {\bf emacs-mac-borderless} {\em https://github.com/gwydirsam/emacs-mac-borderless } \
-{\bf emacs-mac-borderless} {\em github.com/gwydirsam/emacs-mac-borderless } \
-\\
-\begin{tabular}{l l}
-  Objective-C & Emacs-Lisp
-\end{tabular}
-\\
-\begin{itemize}
-  \item Removed normal OS X cocoa border to match iTerm2's ``no title bar'' option
-  \item Fixed bug where window did not respond to mouse clicks
-\end{itemize}
+% {\bf emacs-mac-borderless} {\em github.com/gwydirsam/emacs-mac-borderless } \
+% \\
+% \begin{tabular}{l l}
+%   Objective-C & Emacs-Lisp
+% \end{tabular}
+% \\
+% \vspace{-.16in}
+% \begin{itemize}
+%   \item Removed normal OS X cocoa border to match iTerm2's ``no title bar'' option
+%   \item Fixed bug where window did not respond to mouse clicks
+% \end{itemize}
+% \vspace{-.10in}
 % Simple UI modifications -- but good examples of working in large code-bases, \\
 % implementing simple features, and getting out without breaking other features.
 
@@ -292,22 +296,22 @@ sam@samgwydir.com & 418 College Main, Apt. \#309\\
 % Not code -- just entertaining.
 
 % {\bf spacemacs} {\em https://github.com/syl20bnr/spacemacs}  \
-{\bf Spacemacs} {\em github.com/syl20bnr/spacemacs}  \
-\\
-\begin{tabular}{l l}
-  Emacs-Lisp & Ruby
-\end{tabular}
-\\
-\vspace{-.16in}
-\begin{itemize}
-  % \item Added spacemacs icon to ``emacs-mac'' homebrew formula
-  % \item Actively help users in IRC channel
-  \item Several small bug fixes and issues submitted
-\end{itemize}
-% I have made several contributions in the form of bug fixes and creating issues. \\
-% I actively help users in the IRC channel. I am also responsible for adding the \\
-% spacemacs icon as an option in the ``emacs-mac'' homebrew formula.
-\vspace{-0.10in}
+% {\bf Spacemacs} {\em github.com/syl20bnr/spacemacs}  \
+% \\
+% \begin{tabular}{l l}
+%   Emacs-Lisp & Ruby
+% \end{tabular}
+% \\
+% \vspace{-.16in}
+% \begin{itemize}
+%   % \item Added spacemacs icon to ``emacs-mac'' homebrew formula
+%   % \item Actively help users in IRC channel
+%   \item Several small bug fixes and issues submitted
+% \end{itemize}
+% % I have made several contributions in the form of bug fixes and creating issues. \\
+% % I actively help users in the IRC channel. I am also responsible for adding the \\
+% % spacemacs icon as an option in the ``emacs-mac'' homebrew formula.
+% \vspace{-0.10in}
 
 % {\bf Github} {\em https://www.github.com/gwydirsam}  \
 {\bf Github } {\em github.com/gwydirsam}  \
