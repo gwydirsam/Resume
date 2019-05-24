@@ -1,714 +1,129 @@
-\documentclass[resmargin,line,12pt]{res}
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{multirow}
-\usepackage{amssymb}
-\usepackage{enumerate}
-\usepackage{url}
-\usepackage[bottom=-1.0in]{geometry}
-\makeatletter
-\def\url@leostyle{
-\@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
-\makeatother
-\urlstyle{leo}
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+\usepackage{enumitem}
+\documentclass{res} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textheight}{10.0in} % increase text height to fit on 1-page 
 
-%\usepackage{fontspec,xunicode}
-%\defaultfontfeatures{Mapping=tex-text}
-% \setromanfont[Mapping=tex-text]{Hoefler Text}
+\topmargin -0.25in
 
-\color{black}
+\begin{document} 
 
-\oddsidemargin -.50in
-\evensidemargin -.50in
-% \topmargin -0.65in
-%% \topmargin -0.75in
-\topmargin -0.50in
-%% \textwidth=6.6in
-\textwidth=6.2in
-\itemsep=0in
-\parsep=0in
+\name{Sam Gwydir\\[12pt]}     % the \\[12pt] adds a blank
+				        % line after name      
 
-\newenvironment{list1}{
-\begin{list}{\ding{113}}{%
-  \setlength{\itemsep}{0in}
-  \setlength{\parsep}{0in} \setlength{\parskip}{0in}
-  \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
-  \setlength{\leftmargin}{0.17in}}}{\end{list}}
-\newenvironment{list2}{
-\begin{list}{$\bullet$}{%
-  \setlength{\itemsep}{0in}
-  \setlength{\parsep}{0in} \setlength{\parskip}{0in}
-  \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
-  \setlength{\leftmargin}{0.2in}}}{\end{list}}
-
-
-\begin{document}
-%Bubba
-%\name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam ``Bubba'' Winborn Gwydir}}}
-%% \name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam Winborn Gwydir}}}
-\name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam Gwydir}}}
-\hfill
-\vspace*{-.45in}
-\begin{tabular}{l r}
-sam@samgwydir.com & 615 Clayton Street\\
-(713) 446-0367 & San Francisco, CA 94117
+\address{
+\begin{tabular}{l l r}
+sam@samgwydir.com & github.com/gwydirsam  \\
+(713) 446-0367 & linkedin.com/in/gwydirsam \\
+San Francisco, CA & 
 \end{tabular}
-
-\vspace*{.1in}
-{\color{Black}
+}
+                                  
 \begin{resume}
 
-\vspace*{.05in}
-{\color{Black}
-  \vspace{-.10in}
-  \section{\sc Skills}}
-\hspace{-.35in}
-{\renewcommand{\arraystretch}{1.25}
-  \renewcommand{\tabcolsep}{0.575cm}
-  \begin{tabular}{l l}
-    %& {\em Proficiency Descending} & \\
-    % & {\bf Languages} C/C++/Objective-C Bourne-Shell Ruby Python Lua \\
-    % & {\bf Languages} \LaTeX{} Emacs-lisp Haskell Scheme Matlab\\
-    Go C C++ Protobuf Python Javascript \LaTeX{} & Linux FreeBSD Solaris \\
-    %% & Git Please CMake \\
-    %% & Public Speaking & \\
-    % & {\bf Markup} \LaTeX{} Doc\TeX{} HTML CSS Markdown \\
-    % & {\bf Frameworks} Cocoa  Ruby on Rails \\
-    % & {\bf Tools} Emacs Git CMake GNU-Make Regular Expressions Mathematica \\
-    % & {\bf OS} Mac OS X Linux \& BSD Windows \\
-    % & {\bf Skills} Public Speaking (ToastMasters) Soldering  Analog \& Digital Circuit Design \\
-  \end{tabular}}
+%% \section{JOB OBJECTIVE}          
+%%     A summer position that will use my accounting and computer
+%%     skills.          
+ 
+\section{EDUCATION}          
+    {\bf Texas A\&M University}, College Station, TX \\        
+    Bachelor of Science, Computer Engineering, May 2017   \\       
+    Minor in Mathematics
 
-% {\color{Black}
-%   \section{\sc Objective}}
-% Seeking a summer internship position that will provide an opportunity \\
-% to contribute to important, real-world projects.
+ 
+\section{EXPERIENCE}
+\vspace{-.070in}
+\begin{tabbing}
+  \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+         {\bf Joyent, Inc.} \>Software Engineer     \>June 2017 - Present\\
+         San Francisco, California
+\end{tabbing}
 
-%\vspace*{-.10in}
-%{\color{Black}
-%  \section{\sc Professional Interests}}
-%\hspace{-.14in}
-%\vspace{-.10in}
-%\begin{tabular}{l l l l l}
-%  Operating Systems & Programming Languages & Free Software & Text
-%  Editors & Security  \\
-%  Interface Design & Signal Processing& Compression & Encryption & Emulation
-%\end{tabular}
-
-{\color{Black}
-  \vspace{-.03in}
-  \section{\sc Experience}}
-\color{black}
-
-{\bf Joyent, Inc.} San Francisco California \hfill {\bf June 2017 - Present} \
-\\
-{Software Engineer}
-\\
-\begin{tabular}{l l l l l l l l l l}
-  Go & Linux & QEMU & gRPC & Nomad & Terraform & FreeBSD & SmartOS & C & Dtrace
-\end{tabular}
-\\
-\vspace{-.10in}
 \begin{itemize}
-  \item Founding member of new cloud platform group with 2 other engineers, now 20
-  %% \item Worked on all parts of a cluster scheduled, distributed cloud platform, including proposal, design, implementation and testing
+  \item Founding member of new cloud platform group with 2 other engineers, now 20+, the youngest member by 10 years
+  \item Communicated cloud design decisions and limitations to Samsung engineers and executives before and after each demo, which decided if our project would continue being funded
   %% \item Collaborated with several other teams to orchestrate customer information, network infrastructure and hardware configurations
-  \item Head developer on host networking service, controlling overlay networking for VMs and securely configuring networking for customers
-  \item Designed virtual private cloud (VPC) networking services
+  \item Head developer on Go-based host networking service, dynamically configuring VXLAN overlay networking for up to 64 VMs per Mellanox NIC in less than 2 seconds each
+  %% \item Designed VXLAN on Virtio-Net NIC service for prototype under 1 week
+  %% \item Designed virtual private cloud (VPC) networking services for cloud on a global scale
   %% \item Developed QEMU execution agent, in lieu of libvirt
-  \item Designed communication protocols (protobuf and gRPC) between networking services and hypervisor service
-  \item Planned and prioritized networking work required for success in quarterly prototype demos for Samsung
-  \item Devised metrics to provide observability into distributed systems making up cloud infrastructure using Circonus
+  %% \item Designed communication protocols (protobuf on gRPC) between networking services and hypervisor service
+  %% \item Planned and prioritized networking work required for success in quarterly prototype demos for Samsung
+  %% \item Used Humio and Circonus to add logging and metrics to networking service and hypervisor execution and monitoring service
   %% \item Participated in OS bring up and testing, FreeBSD and Linux
   %% \item Performed QA and testing for new VPC facility in FreeBSD kernel
   %% \item Engineering liason to management
   %% \item Fixed long standing post-mortem DTrace bug in hypervisor core dumps
-  \item Fixed post-mortem DTrace bug enabling porting of FreeBSD hypervisor to Solaris
-  \item Implemented ``hot-inlining'' CPU feature toggling to mitigate ROP vulnerability
+  %% \item Delivered FreeBSD with VPC (virtual private cloud) networking stack demo to Samsung in under 3 months (with 2 others)
+  \item Fixed post-mortem DTrace bug enabling senior engineer to port of FreeBSD hypervisor to Solaris
+  \item Implemented ``hot-inlining'' CPU feature toggling to mitigate hypervisor escape vulnerability
   %% \item Peformed root cause analysis on kernel performance bugs using DTrace
-  \item Improved memory deallocation by 100,000x to improve Postgres performance %%(illumos)
-  \item Patched Postgres 9.4 to use Intimate Shared Memory for more effective virtual memory usage %%(MANATEE-371)
+  \item Improved Solaris shared memory deallocation by 100,000x to improve Postgres performance %%(illumos)
+  \item Patched Postgres 9.4 to use Intimate Shared Memory improving performance and reducing memory footprint %%(MANATEE-371)
 \end{itemize}
-%% \vspace{-.10in}
 
+\begin{tabbing}
+  \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+         {\bf Groupon} \>Systems Engineering Intern     \>June 2016 - June 2017\\
+         San Francisco, California
+\end{tabbing}
 
-{\bf Groupon} Palo Alto California \hfill {\bf June 2016 - June 2017} \
-\\
-{Systems Engineering Intern}
-\\
-\begin{tabular}{l l l l l l l l l}
-  FreeBSD & ZFS & MySQL & Postgres & Jenkins & Poudriere & R & Python & Ansible
-\end{tabular}
-\\
-\vspace{-.10in}
 \begin{itemize}
-  \item Devised OS upgrade plan for a large, international database host fleet
-  \item Managed a contractor, dividing work into external and internal projects
+  \item Benchmarked MySQL and Postgres on FreeBSD with ZFS tunings under OLTP workloads
+  %% \item Devised OS upgrade plan for a large, international database host fleet
+  \item Managed a contractor, tasked with finding external engineers to solve ZFS-related crash causing most database falser
+  %% \item Fixed hard drive partitioning script in new datacenters allowing post-mortem debugging
   % \item Worked with support at iXsystems on performance regressions
   % \item Devised method of mirroring upstream packages with pkgng team members
-  \item Documented and indexed all FreeBSD information across internal services
-  \item Benchmarked FreeBSD kernel patches and configurations, drivers and firmware for performance regressions under database workloads
-  %% \item Debugged system and process crashes
+  %% \item Indexed previously scattered FreeBSD documentation across all internal services for handoff after internship
+    %% \item Debugged system and process crashes
     % \item Automated OS image building for regression testing using Kyua, Jenkins and sysbench.
-  \item Upstreamed several of Groupon's FreeBSD ports, and fixes to included tools
-  \item Attended and gave talks at FreeBSD conferences
+  \item Upstreamed Groupon's FreeBSD ports including circonus-agent, and fixes to included tools like crontab, reducing maintenance work for Groupon
+  %% \item Attended and gave talks at FreeBSD conferences
 \end{itemize}
-\vspace{-.10in}
 
-%% {\bf J\&E Construction Co.} \hfill {\bf June 2015 - June 2016} \
-%% \\
-%% {\bf Systems Engineer}
-%% \\
-%% \begin{tabular}{l l l l l l l}
-%%   FreeBSD/NAS/pfSense & Mac OS X & MythTV & MySQL & ffmpeg & OpenSSH & rsync
-%% \end{tabular}
-%% \\
-%% \vspace{-.16in}
-%% \begin{itemize}
-%%   \item Use TV tuners together in a custom DVR with 8 simultaneous 1080i recordings
-%%   \item Launchd scripts are used to tunnel out from the client to nearest mirror
-%%   \item rsync syncs remote laptop and DVR if network connectivity is available
-%% \end{itemize}
-%% % Simple UI modifications -- but good examples of working in large code-bases, \\
-%% % implementing simple features, and getting out without breaking other features.
-%% \vspace{-.10in}
-
-\vspace*{.20in}
-{\color{Black}
-  \vspace{-.03in}
-  \section{\sc Speaking}}
-
-\color{black}
-{\bf Improving Netdump Performance with iflib} BSDCan 2018 AsiaBSDCon 2018\\
-%% \begin{tabular}{l} 
-%% {\em https://github.com/gwydirsam/bsd-coredump-history} \
-%% \end{tabular}
-%% \\
-\vspace{-.16in}
+\section{SPEAKING AND OPEN SOURCE}          
+\vspace{.05in}
+ 
+{\bf Improving Netdump Performance with iflib} AsiaBSDCon BSDCan 2018
 \begin{itemize}
-\item Added buffering for performance increase of 1.7x without packet loss
+  \item Added client-side buffering to custom UDP stack for 1.7x increase in throughput 
+  \item Gave talk at University of Ottawa and Tokyo University of Science with hundreds in attendance
   %% \item BSDCan 2018, University of Ottawa, Ottawa, Canada
   %% \item AsiaBSDCon 2018, Tokyo University of Science, Tokyo, Japan
 \end{itemize}
-\vspace{-.10in}
 
-\color{black}
-{\bf Participating in Open Source Software} Horizon School of Technology \\
-\vspace{-.16in}
-%% \begin{itemize}
+\vspace{-.05in}
+{\bf Participating in Open Source Software} Horizon School of Technology
+\begin{itemize}
+  \item Q\&A with students covering how to start contributing to open source projects
 %% %% \item Horizon School of Technology, San Francisco, USA
 %%   \item Q\&A with students covering open source software and stories
-%% \end{itemize}
-\vspace{-.10in}
+\end{itemize}
 
-\color{black}
-{\bf The History and Future of Core Dumps in FreeBSD} BSDCan 2017 \\
-%% \begin{tabular}{l l l}
-%%       vBSDCon 2017 & BSDCan 2017 & AsiaBSDCon 2017
-%% \end{tabular}
-%% \begin{tabular}{l} 
-%% {\em https://github.com/gwydirsam/bsd-coredump-history} \
-%% \end{tabular}
-%% \vspace{-.16in}
-%% \begin{itemize}
-%%   \item History of core dump feature in BSD and later FreeBSD, illumos and Mac OS X
+\vspace{-.05in}
+{\bf The History and Future of Core Dumps in FreeBSD} AsiaBSDCon BSDCan vBSDCon 2017
+\begin{itemize}
+  %% \item Wrote extensive research paper on core dump methods available in FreeBSD, illumos and Mac OS X
+  %% \item Used research to improve system crash debugging processes at Groupon
+  \item Delivered talk at every major BSD conference in 2017, including vBSDCon (held by verisign)
 %%   %% \item Detailed diagrams, feature list and descriptions of core dump procedure
 %%   %% \item vBSDCon 2017, Verisign, Reston, Virginia, USA
 %%   %% \item BSDCan 2017, University of Ottawa, Ottawa, Canada
 %%   %% \item AsiaBSDCon 2017, Tokyo University of Science, Tokyo, Japan
-%% \end{itemize}
-%% \vspace{-.10in}
+\end{itemize}
 
-%% \vspace*{.20in}
-
-\color{black}
-{\color{Black}
-  \vspace{-.1in}
-  \section{\sc Education}}
-
-{\bf Texas A\&M University} College Station Texas \hfill {\bf May 2017} \ \\
-\vspace*{-.17in}
-\begin{tabular}{l l l}
-  Bachelor of Science in Computer Engineering \\
-  Minor in Mathematics \\
-\end{tabular}
-
-%{\bf Carnegie Mellon University} Pittsburgh Pennsylvania USA \hfill {\bf \ Summer 2009}\\
-%% {\em Pre-College Advanced Placement/Early Action, June - August 2009}
-%\vspace*{-.17in}
-%\begin{list1}
-%%\item[] Pre-College Advanced Placement \hfill\\
-% % \vspace{-.15in}
-%  % \hspace{-.14in}
-%  % \begin{list2}
-%  %%   \vspace*{.05in}
-%  %	\item[] Calculus I
-%  %	\item[] Electrical and Computer Engineering
-%  % \end{list2}
-%\end{list1}
-%% \vspace*{.05in}
-
-%\vspace*{-.165in}
-%{\bf Stratford High School} Houston Texas US \hfill {\bf 2006 - 2010}\\
-
-%% \vspace*{.20in}
-%% {\color{Black}
-%%   \vspace{-.13in}
-%%   \section{\sc Selected Projects}}
-%% \color{black}
-%{\bf Avril Six} {\em Programmer} \hfill {\bf 2011}
-%\\
-%\begin{tabular}{l l l l}
-%   Ruby on Rails
-%\end{tabular}
-%\\
-%\hspace*{.14pt}
-%  A website created as a present to a friend. A personalized
-%  music recommendation \\ application.
-% Avril Six is part of a birthday present for my friend whose birthday is on april six. I sent her a large hard drive full of music, and I needed a neat way to show her the highlights -- so I made another Rails based website, using Heroku as a Rails server and Amazon S3 for storage. This was my first time using any sort of cloud hosting, and using Ruby's Gems made the intergration very simple.  \\
-% (\url{http://avrilsix.heroku.com})
-%\vspace{-.13in}
-
-% {\bf SamGwydir.com} {\em System Administrator } \
-% \\
-% \begin{tabular}{l l l l l l}
-%   OpenBSD & PF & OpenSSH & OpenSMTPd \& Dovecot & NSD \& Unbound & httpd
-% \end{tabular}
-% \\
-% My personal server -- hosts my website, email, and DNS services.
-
-% {\bf emacs-mac-borderless} {\em https://github.com/gwydirsam/emacs-mac-borderless } \
-% {\bf Click-Bait Blocker} \
-% \\
-% \begin{tabular}{l l l l l}
-%   Google Chrome & Javascript & convnetJS & HTML & CSS 
-% \end{tabular}
-% \\
-% \vspace{-.16in}
-% \begin{itemize}
-%   \item Google Chrome extension to block ``Click Bait'', or pointless articles
-%   \item Blocks posts on Facebook and tweets on Twitter
-%   \item ConvNetJS in-browser neural nets are used for classification
-%   \item A supervised neural net is trained with RSS feeds and Amazon Mechanical Turk
-%   % \item This project is done with Chris Findeisen ({\em github.com/atrus7})
-% \end{itemize}
-% % Simple UI modifications -- but good examples of working in large code-bases, \\
-% % implementing simple features, and getting out without breaking other features.
-% \vspace{-.10in}
-
-% {\bf emacs-mac-borderless} {\em https://github.com/gwydirsam/emacs-mac-borderless } \
-%% {\bf MythNAS} \
-%% \\
-%% \begin{tabular}{l l l l l l l}
-%%   FreeBSD/NAS/pfSense & Mac OS X & MythTV & MySQL & ffmpeg & OpenSSH & rsync
-%% \end{tabular}
-%% \\
-%% \vspace{-.16in}
-%% \begin{itemize}
-%%   \item Use TV tuners together in a custom DVR with 8 simultaneous 1080i recordings
-%%   \item Launchd scripts are used to tunnel out from the client to nearest mirror
-%%   \item Use ffmpeg and MythTV perl API to cut commercials out of TV shows
-%%   \item rsync syncs remote laptop and DVR if network connectivity is available
-%%   \item Make use of VPS in New York, New York and Frankfurt, Germany as mirrors
-%%   \item Usage locations include Yuzhno-Sakhalinsk, Russia; Basra, Iraq; Dubai, UAE
-%% \end{itemize}
-%% % Simple UI modifications -- but good examples of working in large code-bases, \\
-%% % implementing simple features, and getting out without breaking other features.
-%% \vspace{-.10in}
-
-%% % % {\bf Database Engine } {\em  https://github.com/gwydirsam/CSCE315-Project2-Mirror }  \
-%% {\bf Eugenics } {\em github.com/gwydirsam/Eugenics }  \
-%% \\
-%% \begin{tabular}{l l l l l l l} 
-%%   C++ & CMake & Google Test & GNU GetOpts & Python & matplotlib & Agile
-%% \end{tabular}
-%% \\
-%% \vspace{-.16in}
-%% \begin{itemize}
-%%   \item Eugenics is system to generate and visualize a genetic algorithm
-%%   \item The algorithm attempts to generate circuits from a truth table
-%%   \item Travis CI was used for continuous integration testing \`{a} la Agile
-%%   \item Created custom CMake/Shell scripts to build application and link libraries
-%% \end{itemize}
-%% \vspace{-.10in}
-
-% {\bf Database Engine } {\em  https://github.com/gwydirsam/CSCE315-Project2-Mirror }  \
-% {\bf Database Engine \& Blog } {\em  github.com/gwydirsam/CSCE315-DBMS }  \
-% \\
-% \begin{tabular}{l l l l l l}
-%   C++ & Boost & GNU Readline & Getopts & CMake & Bash
-% \end{tabular}
-% \\
-% \vspace{-.10in}
-% \begin{itemize}
-%   \item Wrote Database Engine that implements a SQL like domain specific language
-%   \item Designed a CLI blog app on making use of DB backend
-%   \item Wrote a simple DSL ``shell'' for debugging using GNU Readline
-%   \item Created custom CMake/Shell scripts to build application and link libraries
-% \end{itemize}
-
-% This project displays usage of the above libraries and tools to create \\
-% a database engine and blog application. The engine implements a domain specific \\
-% language similar to SQL.
-
-% {\bf iTerm2-badge-mod} {\em  https://github.com/gwydirsam/iTerm2-Mod}  \
-%% {\bf iTerm2 Badge Mod} {\em  github.com/gwydirsam/iTerm2-Mod}  \
-%% \\
-%% \begin{tabular}{l}
-%%   Objective-C
-%% \end{tabular}
-%% \\
-%% \vspace{-.16in}
-%% \begin{itemize}
-%%   % \item Moved the per-tab label or ``badge'' to the bottom right
-%%   \item Submitted Pull Request to iTerm2 Author (now issue \#3508)
-%%   % \item The option to move the badge is now part of the version 4 milestone
-%% \end{itemize}
-%% % Moved the iTerm2 ``badge'' to the bottom right and submitted a pull \\ 
-%% % request. The ability to change the location of the badge is now part \\
-%% % of a future milestone.
-%% \vspace{-.10in}
-
-% % {\bf emacs-mac-borderless} {\em https://github.com/gwydirsam/emacs-mac-borderless } \
-% {\bf emacs-mac-borderless} {\em github.com/gwydirsam/emacs-mac-borderless } \
-% \\
-% \begin{tabular}{l l}
-%   Objective-C & Emacs-Lisp
-% \end{tabular}
-% \\
-% \vspace{-.16in}
-% \begin{itemize}
-%   \item Removed normal OS X cocoa border to match iTerm2's ``no title bar'' option
-%   \item Fixed bug where window did not respond to mouse clicks
-% \end{itemize}
-% \vspace{-.10in}
-% Simple UI modifications -- but good examples of working in large code-bases, \\
-% implementing simple features, and getting out without breaking other features.
-
-% {\bf stallman-emails} {\em https://github.com/gwydirsam/stallman-emails } \
-% \\
-% GNU Emacs recently moved from BZR to git and Richard Stallman had some \\ 
-% issues. I informed RMS how ``git pull'' worked and this issue subsequently \\
-% grew to hundreds of emails about how VC-mode should handle git. \\
-% Not code -- just entertaining.
-
-% {\bf spacemacs} {\em https://github.com/syl20bnr/spacemacs}  \
-% {\bf Spacemacs} {\em github.com/syl20bnr/spacemacs}  \
-% \\
-% \begin{tabular}{l l}
-%   Emacs-Lisp & Ruby
-% \end{tabular}
-% \\
-% \vspace{-.16in}
-% \begin{itemize}
-%   % \item Added spacemacs icon to ``emacs-mac'' homebrew formula
-%   % \item Actively help users in IRC channel
-%   \item Several small bug fixes and issues submitted
-% \end{itemize}
-% % I have made several contributions in the form of bug fixes and creating issues. \\
-% % I actively help users in the IRC channel. I am also responsible for adding the \\
-% % spacemacs icon as an option in the ``emacs-mac'' homebrew formula.
-% \vspace{-0.10in}
-
-% {\bf Github} {\em https://www.github.com/gwydirsam}  \
-%% \vspace{ 0.10in}
-{\bf Github } {\em github.com/gwydirsam}  \
-
-
-% \vspace*{.20in}
-% {\color{Black}
-%   \section{\sc Professional Experience}}
-% {\bf Assistant} {\em Dr. William Bassichis (Texas A{\&}M University)} \hfill {\bf 2012 - Present} \
-% \\
-% \begin{tabular}{l l l l l}
-%    \LaTeX{} &  \TeX{} &  Emacs &  Mathematica & GnuPlot
-% \end{tabular}
-% \\
-% Reformatting and Updating Figures for Don't Panic I, II \& III,
-% migrating \\ original \TeX{} to \LaTeX{}. Assisted in creating
-% documents for publishing in journals.
-% \vspace{-.13in}
-
-% % (\url{https://github.com/Gwydir8/Liskow---Lewis-Email-Template})
-
-% % {\bf Web Developer} {\em The Path of Tea} \hfill {\bf 2011} \
-% % \\
-% % Migrated to a Shopify backend for the website with a new design
-% % \\
-% % \begin{tabular}{l l l l}
-% %    Shopify &  Ruby &  HAML/SASS
-% % \end{tabular}
-% % \vspace{-.13in}
-% % \\
-% % Migrated web store to Shopify from their custom system. The new platform is more user friendly and becuase of this has increased online sales. A new design enlivened the site and helped organize the many products to choose from.
-
-% % (\url{thepathoftea.com})
-
-% %{\bf Web Designer} {\em Lance Brown} \hfill {\bf 2011} \
-% %% long % Contracted to take an image of a email announcment for Liskow \& Lewis, a law firm located in Houston. I re-implemented the image in HTML and CSS. Though email uses regular HTML and CSS for content and layout respecivly, email clients do not adhere to the standards of those languages. Due to the irregularities between email clients, this became one of my more challenging projects. This email went out to about 2500 people, including the entire law firm, their families and clients.
-% %% short
-% %\\
-% %\begin{tabular}{l l l l}
-% %     MailChimp &  HTML &  CSS
-% %\end{tabular}
-% %\\
-% %Created a table based layout for an email to Liskow \& Lewis'
-% %clientele for \\ an annual meeting.
-% %\vspace{-.13in}
-% %% \\
-% %% \\
-% %% \vspace{-.20in}
-
-% % (\url{github.com/Gwydir8/Liskow---Lewis-Email-Template})
-
-% % {\bf Web Consultant} {\em Stratford Playhouse} \hfill {\bf 2010} \
-% % \\
-% % \begin{tabular}{l l l l}
-% %    Squarespace  &  HTML &  CSS
-% % \end{tabular}
-% % \\
-% % Created a Squarespace blog which hosts the playhouse's news,
-% % photos and \\ ticket sales.
-% % \vspace{-.13in}
-
-% % \\
-% % Discussed migrating the current website format to a custom written framework or use an exisiting WYSIWYG editor. Taught new board member how to use the website.
-% % (\url{shsplayhouse.com})
-
-
-% %{\bf Web Designer \& Photographer} {\em Julie King} \hfill {\bf 2010} \
-% %\\
-% %\begin{tabular}{l l}
-% %   HTML &  CSS
-% %\end{tabular}
-% %\\
-% %Created a website showcasing the their home put up for sale.
-% %\vspace{-.13in}
-% %% \\
-% %% Contracted to design a website to sell an area home. Coded website from scratch and photographed the house for an extensive gallery featured on the site. Was instructed in how to photograph houses by Houston-area graphic designer, Lance Brown (lancebrowndesign.com).
-% %% \\
-% %% \vspace{-.13in}
-% %% (\url{https://github.com/Gwydir8/13515-Myrtlea})
-
-% % {\bf IT} {\em J \& E Construction Company} \hfill {\bf 2010 - Present}
-% % \\
-% % Miscellaneous technical support, from document creation to remote
-% % backup and \\ cloud storage.
-% % \vspace{-.13in}
-
-% %{\bf IT} {\em Superior Exterior} \hfill {\bf 2010}
-% %\vspace{-.13in}
-
-% {\bf Summer Intern} {\em FMC Technologies} \hfill {\bf 2009} \
-% \\
-% Transferred data to new documenting system; Tested new formula for \\ RFID covers.
-% % \\
-% % Tested new formula of rubber to cover RFID tags on manufactured parts. Transferred pump blueprints to new database. Worked with the team that invented the ``Hammerless Union,'' an in-place replacement for sledgehammers.
-
-% \vspace*{.20in}
-% {\color{Black}
-%   \section{\sc Personal \\ Experience}}
-% {\bf Tutor} \hfill {\bf 2010 - Present} \
-% \\
-% \begin{tabular}{l l l}
-%   C++ Language & Data Structures \& Algorithms & \LaTeX{}
-% \end{tabular}
-
-% \vspace{-.13in}
-% {\bf Vice President of Public Relations} {\em TAMU ToastMasters} \hfill {\bf 2013} \
-% \\
-% Initiated mentorship program for established and potential members alike to practice speaking outside of meetings. This created a greater sense of cohesion among members.
-
-
-%{\bf TAMU Toastmasters} {\em Consultant} \hfill {\bf 2013 - Present} \
-%\\
-%\begin{tabular}{l l l l l}
-%   Ruby on Rails  & HTML  & CSS  & Postfix  & Dovecot
-%\end{tabular}
-%\\
-%Building a new website for TAMU Toastmasters based on Ruby on Rails and
-%\\ hosting the mailing list.
-%\vspace{-.13in}
-
-%{\bf Lance Brown Design} {\em Programmer} \hfill {\bf 2011} \
-%\\
-%\begin{tabular}{l l l l}
-  % Ruby on Rails  HTML  CSS
-%\end{tabular}
-%\\
-%\hspace*{.14pt}
-%Re-wrote the backend of Lance Brown's online portfolio using Ruby on Rails
-% \\
-% Lance Brown is a Houston designer that I am interning with this summer. To get the internship I re-emplemented his website using up to date standards (HTML5/CSS3) and added database functionality using Rails. Maintaining his website is now much easier using a database to hold his portfolio. I also re-wrote the CSS using the Blueprint CSS framework to ease later modification.\\
-% (\url{http://lancebrowndesign.heroku.com})
-%\vspace{-.13in}
-%
-%{\bf Objective-Tea} {\em Owner/Programmer} \hfill {\bf 2010} \
-%\\
-%\begin{tabular}{l l l l}
-  % Shopify Templating Language (Liquid) &  Ruby &  HTML/CSS
-%\end{tabular}
-%\\
-%\hspace*{.14pt}
-%Sold tea online through my own store, with a custom theme
-% \\
-% Development of an online tea store. Using HTML, CSS, and Ruby through Shopify's Liquid templating language, I built my own storefront. I used Google Analytics and AdWords to monitor and A/B test different ideas. I coded a simple timer for Mac OS X in Objective-C with a nice alert for customers.\\
-% (\url{http://github.com/Gwydir8/Timer})
-
-% {\bf Stratford Playhouse Website} {\em Designer} \hfill {\bf 2009} \
-% \\
-% Built Stratford Playhouse website, using Squarespace.com as a CMS. Used a modified template, HTML and CSS. Documented use of website. This site has been modified since my original work. I still act as support for this website.
-% \\
-% (\url{http://www.shsplayhouse.com})
-
-
-% \vspace*{.25in}
-% {\color{Black}
-%   \section{\sc Hobbies}}
-% \color{black}
-% \hspace{-.13in}
-% \begin{tabular}{l l l l l}
-%   Rock Climbing & Biking & Tea & Modding Video Game Consoles & Partner Dancing\\
-% \end{tabular}
-
-
-% \vspace*{.5in}
-% {\em Department of Statistics}
-
-% \begin{tabular}{l l}
-%   {{\bf\em Senior Schedule}} &\\
-%   Intro to Engineering	& \\
-%   Economics AP		& Theater IV\\
-%   Physics AP		& Calculus BC AP\\
-%   German I		& English IV AP\\
-% \end{tabular}
-% \begin{list2}
-%   \vspace*{.05in}
-% \item Dissertation Topic:  ``Nonstationary Covariance Models for
-%   Spatial Data and Regression Problems''
-% \item Dissertation Topic:  ``Hierarchical Models for Multiple Ratings
-%   in Performance-Based\\ \hspace*{1.23in} Student Assessments.''
-% \item Advisor:  Mark J. Schervish
-% \end{list2}
-% \vspace*{.05in}
-% \item[] M.S., Statistics,  May 2000
-
-
-%
-%   {\bf Carleton College}, Northfield, Minnesota USA\\
-%%   {\em Department of Mathematics and Statistics}
-%   \vspace*{-.1in}
-%   \begin{list1}
-%   \item[] B.A., Biology,  May, 1993
-%   \end{list1}
-
-
-%   \vspace*{-2.5mm}
-%   NSF Vertical Integration of Research and Education in Statistics and
-%   Mathematical Sciences\\ (VIGRE) teaching fellowship.
-%
-
-%   \section{\sc Academic Experience}
-%   {\bf Carnegie Mellon University}, Pittsburgh, Pennsylvania USA
-%
-%   \vspace{-.3cm}
-%   {\em Graduate Student} \hfill {\bf August, 1998 - present}\\
-%   Includes current Ph.D.~research, Ph.D.~and Masters level coursework and
-%   research/consulting projects.
-%
-%%   \vspace{-.1cm}
-%   {\em Instructor} \hfill {\bf May - June, 2002}\\
-%   Co-taught graduate level course for the Master of Science in
-%   Computational Finance program.  Shared responsibility for lectures, exams,
-%   homework assignments, and  grades.
-%   \vspace*{.05in}Pre
-%   \begin{list2}
-%   \item 46-731 Probability and Statistics, Summer 2002.
-%   \end{list2}
-%
-%
-%%   \vspace{-.1cm}
-%   {\em NSF VIGRE Teaching Fellow} \hfill {\bf January - May, 2001}\\
-%   Head teaching assistant.
-%   Duties included  shared administrative responsibilities with faculty
-%   instructor, fielding of all student inquiries, and oversight of
-%   graduate student teaching assistants and graders.
-%   \vspace*{.05in}
-%   \begin{list2}
-%   \item 36-217 Probability Theory and Random Processes, Spring 2001.
-%   \end{list2}
-%
-%%   \vspace{-.1cm}
-%   {\em Teaching Assistant} \hfill {\bf August, 2001  - present}\\
-%   Duties at various times have included
-%   office hours and leading weekly computer lab exercises.
-%
-%
-%
-%%   \section{\sc Publications}
-%%   Paciorek, C.J., J.S. Risbey, V. Ventura, and R.D.Rosen. 2002. Multiple indices of Northern Hemisphere Cyclone
-%%   Activity, Winters 1949-1999. Journal of Climate 15:1573-1590.
-%%
-%%   Paciorek, C.J., R. Condit, S.P. Hubbell, and R.B. Foster.  2000.
-%%   The demographics of resprouting in tree and shrub species of a moist
-%%   tropical forest.  Journal of Ecology 88:765-777.
-%%
-%%   Paciorek, C.J., B.R. Moyer, R.A. Levin, and S.L. Halpern.  1995.
-%%   Pollen consumption by hummingbird flower mite {\it Proctolaelaps
-%%   kirmsei} and possible fitness effects on {\it Hamelia patens}.
-%%   Biotropica 27:258-262.  (author order determined by lot)
-%%
-%%   \section{\sc Papers in preparation}
-%%
-%%   Ventura, V., C.J.jj Paciorek, and J.S. Risbey.  Controlling the proportion of falsely-rejected hypotheses when conducting multiple tests with geophysical data.
-%%
-%%   Ickes, K., C.J. Paciorek, and S. Thomas.  Effects of wild pigs on
-%%   forest demographic processes in Malaysia.
-%
-
-
-
-
-%   \color{black}
-%   {\color{Black}
-%   \section{\sc Personal Interests}}
-%   \hspace{-.14in}
-%   \begin{tabular}{l l l l l l l l}
-%     Travel & Tea & Cooking & DJing & Dancing & French & German & Japanese\\
-%   \end{tabular}
-%
-%   {\color{Black}
-%   \section{\sc Personal\\Goals}}
-%   {\bf Travel The World}\\
-%   I was born near Dubai, United Arab Emirates, and moved to the United States shortly afterwards. All my life I have been traveling. In recent years I have explored the United States from California to New York, and been on three trips to Europe. With only four more continents to explore I plan to visit all before I settle down in one place -- but only if I have to settle.\\
-%   \\
-%   {\bf Become Tri-Lingual}\\
-%   Whether it means drawing up an idea, programming, or verbal, communication interests me. Because of this, and to facilitate my travel, I've long had a goal of learning at least two other languages. I've taken four years of French and have used it to get around France and book an apartment in Montmartre, Paris among other things. I'm currently learning the Japanese syllalibraries and planing on taking a class next semester.\\
-%   \\
-%   {\bf Start my own business}\\
-%   To facilitate longterm travel, I would need to make money while on the move. I hope to do this by working on web design and Ruby on Rails based sites over the internet. Afterall, why tie myself down to an office when all I need is a computer to do my job?\\
-
-
-
-
-%   {\color{Black}
-%   \section{\sc References}
-% }
-%   \vspace{-.13in}
-%   \hspace{-.14in}
-%   \begin{tabular}{ p{3in}@{} r @{{\em :}}p{5in}}
-%     \multicolumn{2}{r}{} \\
-%     {\bf Tep Ungchusri}		& {\it Cell}&   \hspace{.2cm}(281) 686-5472\\
-%     {\em Summer Intern Mentor} 	& {\it Office}& \hspace{.2cm}(281) 260-2157\\
-%     {FMC Technologies} 		& {\it E-mail}& \hspace{.2cm}Tep.Ungchusri@FMCti.com\\
-%   \end{tabular}
-%
-%   \vspace{-.13in}
-%   \hspace{-.14in}
-%   \begin{tabular}{p{3in}@{} r @{{\em :}}p{5in}}
-%     \multicolumn{2}{r}{} \\
-%     {\bf Rory Frazee} 		& {\it Cell}&   \hspace{.2cm}(281) 844-2791\\
-%     {\em Engineering Teacher}	& {\it Office}& \hspace{.2cm}(281) 560-7550\\
-%     {Stratford High School} 	& {\it E-mail}& \hspace{.2cm}Rory.Frazee@SpringBranchISD.com\\
-%   \end{tabular}
+\section{TECHNICAL SKILLS}          
+\vspace{.05in}
+    {\bf Languages:} Go  C  C++  Python Protobuf \LaTeX{} \\
+    {\bf Hypervisor:} kvm/QEMU bhyve\\
+    {\bf Frameworks:} gRPC \\
+    {\bf OS:} Linux FreeBSD Solaris  \\
+    {\bf Tracing/Debugging:} DTrace mdb wireshark \\
+    %% {\bf ETC:} Root Cause Analysis, Post-mortem debugging
+ 
+ 
 \end{resume}
 \end{document}

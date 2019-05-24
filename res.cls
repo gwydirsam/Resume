@@ -194,8 +194,7 @@
 \DeclareOption{line}{\@linetrue}
 \DeclareOption{centered}{\@linefalse}
 
-% \DeclareOption{margin}{\@margintrue}
-\DeclareOption{resmargin}{\@margintrue}
+\DeclareOption{margin}{\@margintrue}
 \DeclareOption{overlapped}{\@marginfalse}
 
 \ExecuteOptions{overlapped,centered}
@@ -235,7 +234,7 @@
 % this is used to print the name and address at the top of
 % the page with a hline in between
 %
-\def\namefont{\Huge\bf}
+\def\namefont{\large\bf}
 \def\@linename{\begingroup
   \def\\{, }
   {\namefont\@name}
@@ -773,12 +772,12 @@
 % with everything in the left of its column
 
 \@secpenalty = -500
-%\topmargin -10pt
+\topmargin 0pt
 \headheight 0pt
 \headsep 0pt
-\textheight 10in
+\textheight 9in
 \parindent 0pt
-\topmargin -.5in
+\topmargin 0in
 \oddsidemargin 0pt
 \evensidemargin 0pt
 \marginparwidth 0pt
@@ -801,3 +800,4 @@
 \end{format}
 
 \let\section\@@section
+
