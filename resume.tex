@@ -17,11 +17,13 @@
 
 \color{black}
 
-\oddsidemargin -.70in
-\evensidemargin -.70in
+\oddsidemargin -.50in
+\evensidemargin -.50in
 % \topmargin -0.65in
-\topmargin -0.75in
-\textwidth=6.6in
+%% \topmargin -0.75in
+\topmargin -0.50in
+%% \textwidth=6.6in
+\textwidth=6.2in
 \itemsep=0in
 \parsep=0in
 
@@ -42,7 +44,8 @@
 \begin{document}
 %Bubba
 %\name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam ``Bubba'' Winborn Gwydir}}}
-\name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam Winborn Gwydir}}}
+%% \name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam Winborn Gwydir}}}
+\name{{\fontsize{28pt}{30pt}\selectfont {\color{Black}Sam Gwydir}}}
 \hfill
 \vspace*{-.45in}
 \begin{tabular}{l r}
@@ -60,13 +63,14 @@ sam@samgwydir.com & 615 Clayton Street\\
   \section{\sc Skills}}
 \hspace{-.35in}
 {\renewcommand{\arraystretch}{1.25}
-  \renewcommand{\tabcolsep}{0.175cm}
-  \begin{tabular}{l l l}
+  \renewcommand{\tabcolsep}{0.575cm}
+  \begin{tabular}{l l}
     %& {\em Proficiency Descending} & \\
     % & {\bf Languages} C/C++/Objective-C Bourne-Shell Ruby Python Lua \\
     % & {\bf Languages} \LaTeX{} Emacs-lisp Haskell Scheme Matlab\\
-    & C C++ Go Bourne-Shell Ansible Python Emacs-lisp \LaTeX{} \\
-    & Public Speaking & \\
+    Go C C++ Protobuf Python Javascript \LaTeX{} & Linux FreeBSD Solaris \\
+    %% & Git Please CMake \\
+    %% & Public Speaking & \\
     % & {\bf Markup} \LaTeX{} Doc\TeX{} HTML CSS Markdown \\
     % & {\bf Frameworks} Cocoa  Ruby on Rails \\
     % & {\bf Tools} Emacs Git CMake GNU-Make Regular Expressions Mathematica \\
@@ -79,15 +83,152 @@ sam@samgwydir.com & 615 Clayton Street\\
 % Seeking a summer internship position that will provide an opportunity \\
 % to contribute to important, real-world projects.
 
+%\vspace*{-.10in}
+%{\color{Black}
+%  \section{\sc Professional Interests}}
+%\hspace{-.14in}
+%\vspace{-.10in}
+%\begin{tabular}{l l l l l}
+%  Operating Systems & Programming Languages & Free Software & Text
+%  Editors & Security  \\
+%  Interface Design & Signal Processing& Compression & Encryption & Emulation
+%\end{tabular}
+
+{\color{Black}
+  \vspace{-.03in}
+  \section{\sc Experience}}
+\color{black}
+
+{\bf Joyent, Inc.} San Francisco California \hfill {\bf June 2017 - Present} \
+\\
+{Software Engineer}
+\\
+\begin{tabular}{l l l l l l l l l l}
+  Go & Linux & QEMU & gRPC & Nomad & Terraform & FreeBSD & SmartOS & C & Dtrace
+\end{tabular}
+\\
+\vspace{-.10in}
+\begin{itemize}
+  \item Founding member of new cloud platform group with 2 other engineers, now 20
+  %% \item Worked on all parts of a cluster scheduled, distributed cloud platform, including proposal, design, implementation and testing
+  %% \item Collaborated with several other teams to orchestrate customer information, network infrastructure and hardware configurations
+  \item Head developer on host networking service, controlling overlay networking for VMs and securely configuring networking for customers
+  \item Designed virtual private cloud (VPC) networking services
+  %% \item Developed QEMU execution agent, in lieu of libvirt
+  \item Designed communication protocols (protobuf and gRPC) between networking services and hypervisor service
+  \item Planned and prioritized networking work required for success in quarterly prototype demos for Samsung
+  \item Devised metrics to provide observability into distributed systems making up cloud infrastructure using Circonus
+  %% \item Participated in OS bring up and testing, FreeBSD and Linux
+  %% \item Performed QA and testing for new VPC facility in FreeBSD kernel
+  %% \item Engineering liason to management
+  %% \item Fixed long standing post-mortem DTrace bug in hypervisor core dumps
+  \item Fixed post-mortem DTrace bug enabling porting of FreeBSD hypervisor to Solaris
+  \item Implemented ``hot-inlining'' CPU feature toggling to mitigate ROP vulnerability
+  %% \item Peformed root cause analysis on kernel performance bugs using DTrace
+  \item Improved memory deallocation by 100,000x to improve Postgres performance %%(illumos)
+  \item Patched Postgres 9.4 to use Intimate Shared Memory for more effective virtual memory usage %%(MANATEE-371)
+\end{itemize}
+%% \vspace{-.10in}
+
+
+{\bf Groupon} Palo Alto California \hfill {\bf June 2016 - June 2017} \
+\\
+{Systems Engineering Intern}
+\\
+\begin{tabular}{l l l l l l l l l}
+  FreeBSD & ZFS & MySQL & Postgres & Jenkins & Poudriere & R & Python & Ansible
+\end{tabular}
+\\
+\vspace{-.10in}
+\begin{itemize}
+  \item Devised OS upgrade plan for a large, international database host fleet
+  \item Managed a contractor, dividing work into external and internal projects
+  % \item Worked with support at iXsystems on performance regressions
+  % \item Devised method of mirroring upstream packages with pkgng team members
+  \item Documented and indexed all FreeBSD information across internal services
+  \item Benchmarked FreeBSD kernel patches and configurations, drivers and firmware for performance regressions under database workloads
+  %% \item Debugged system and process crashes
+    % \item Automated OS image building for regression testing using Kyua, Jenkins and sysbench.
+  \item Upstreamed several of Groupon's FreeBSD ports, and fixes to included tools
+  \item Attended and gave talks at FreeBSD conferences
+\end{itemize}
+\vspace{-.10in}
+
+%% {\bf J\&E Construction Co.} \hfill {\bf June 2015 - June 2016} \
+%% \\
+%% {\bf Systems Engineer}
+%% \\
+%% \begin{tabular}{l l l l l l l}
+%%   FreeBSD/NAS/pfSense & Mac OS X & MythTV & MySQL & ffmpeg & OpenSSH & rsync
+%% \end{tabular}
+%% \\
+%% \vspace{-.16in}
+%% \begin{itemize}
+%%   \item Use TV tuners together in a custom DVR with 8 simultaneous 1080i recordings
+%%   \item Launchd scripts are used to tunnel out from the client to nearest mirror
+%%   \item rsync syncs remote laptop and DVR if network connectivity is available
+%% \end{itemize}
+%% % Simple UI modifications -- but good examples of working in large code-bases, \\
+%% % implementing simple features, and getting out without breaking other features.
+%% \vspace{-.10in}
+
+\vspace*{.20in}
+{\color{Black}
+  \vspace{-.03in}
+  \section{\sc Speaking}}
+
+\color{black}
+{\bf Improving Netdump Performance with iflib} BSDCan 2018 AsiaBSDCon 2018\\
+%% \begin{tabular}{l} 
+%% {\em https://github.com/gwydirsam/bsd-coredump-history} \
+%% \end{tabular}
+%% \\
+\vspace{-.16in}
+\begin{itemize}
+\item Added buffering for performance increase of 1.7x without packet loss
+  %% \item BSDCan 2018, University of Ottawa, Ottawa, Canada
+  %% \item AsiaBSDCon 2018, Tokyo University of Science, Tokyo, Japan
+\end{itemize}
+\vspace{-.10in}
+
+\color{black}
+{\bf Participating in Open Source Software} Horizon School of Technology \\
+\vspace{-.16in}
+%% \begin{itemize}
+%% %% \item Horizon School of Technology, San Francisco, USA
+%%   \item Q\&A with students covering open source software and stories
+%% \end{itemize}
+\vspace{-.10in}
+
+\color{black}
+{\bf The History and Future of Core Dumps in FreeBSD} BSDCan 2017 \\
+%% \begin{tabular}{l l l}
+%%       vBSDCon 2017 & BSDCan 2017 & AsiaBSDCon 2017
+%% \end{tabular}
+%% \begin{tabular}{l} 
+%% {\em https://github.com/gwydirsam/bsd-coredump-history} \
+%% \end{tabular}
+%% \vspace{-.16in}
+%% \begin{itemize}
+%%   \item History of core dump feature in BSD and later FreeBSD, illumos and Mac OS X
+%%   %% \item Detailed diagrams, feature list and descriptions of core dump procedure
+%%   %% \item vBSDCon 2017, Verisign, Reston, Virginia, USA
+%%   %% \item BSDCan 2017, University of Ottawa, Ottawa, Canada
+%%   %% \item AsiaBSDCon 2017, Tokyo University of Science, Tokyo, Japan
+%% \end{itemize}
+%% \vspace{-.10in}
+
+%% \vspace*{.20in}
+
 \color{black}
 {\color{Black}
   \vspace{-.1in}
   \section{\sc Education}}
 
-{\bf Texas A\&M University} College Station Texas USA \hfill {\bf May 2017} \ \\
+{\bf Texas A\&M University} College Station Texas \hfill {\bf May 2017} \ \\
 \vspace*{-.17in}
 \begin{tabular}{l l l}
-  Bachelor of Science in Computer Engineering, Computer Science \\
+  Bachelor of Science in Computer Engineering \\
   Minor in Mathematics \\
 \end{tabular}
 
@@ -108,110 +249,6 @@ sam@samgwydir.com & 615 Clayton Street\\
 
 %\vspace*{-.165in}
 %{\bf Stratford High School} Houston Texas US \hfill {\bf 2006 - 2010}\\
-
-%\vspace*{-.10in}
-%{\color{Black}
-%  \section{\sc Professional Interests}}
-%\hspace{-.14in}
-%\vspace{-.10in}
-%\begin{tabular}{l l l l l}
-%  Operating Systems & Programming Languages & Free Software & Text
-%  Editors & Security  \\
-%  Interface Design & Signal Processing& Compression & Encryption & Emulation
-%\end{tabular}
-
-\vspace*{.20in}
-{\color{Black}
-  \vspace{-.13in}
-  \section{\sc Experience}}
-\color{black}
-
-{\bf Joyent, Inc.} San Francisco California USA \hfill {\bf June 2017 - Present} \
-\\
-\begin{tabular}{l l l l l l l l l}
-  SmartOS & FreeBSD & Linux & ZFS & Postgres & C & Go & Dtrace & mdb
-\end{tabular}
-\\
-\vspace{-.16in}
-\begin{itemize}
-  \item Implemented ``hot-inlining'' CPU feature toggling to defeat class of attacks (OS-6239)
-  \item Improved memory deallocation by 100,000x to improve Postgres performance (OS-6390)
-  \item Patched Postgres to use Intimate Shared Memory for more effective virtual memory usage (MANATEE-371)
-  \item Fixed long standing post-mortem DTrace bug in hypervisors (OS-5927)
-    \item Participated in new OS bring up and testing (FreeBSD \& Linux)
-\end{itemize}
-\vspace{-.10in}
-
-
-{\bf Groupon} Palo Alto California USA \hfill {\bf June 2016 - June 2017} \
-\\
-\begin{tabular}{l l l l l l l l l}
-  FreeBSD & ZFS & MySQL & Postgres & Jenkins & Poudriere & R & Ansible & Shell
-\end{tabular}
-\\
-\vspace{-.16in}
-\begin{itemize}
-  \item Systems Engineering intern at Groupon working with FreeBSD-based database hosts
-  % \item Devised method of mirroring upstream packages with pkgng team members
-  \item Documented and indexed all FreeBSD information across internal services
-  \item Benchmarked FreeBSD releases and driver and firmware for performance regressions under database workloads
-    % \item Automated OS image building for regression testing using Kyua, Jenkins and sysbench.
-  \item Worked with a contractor at Gainframe to update host provisioning
-  % \item Worked with support at iXsystems on performance regressions
-  \item Upstreamed several of Groupon's FreeBSD ports, and a small fix to
-    crontab
-  \item Attended and talked at FreeBSD conferences
-  \item Debugged system and process crashes
-\end{itemize}
-\vspace{-.10in}
-
-
-\vspace*{.20in}
-{\color{Black}
-  \vspace{-.13in}
-  \section{\sc Speaking}}
-
-\color{black}
-{\bf Improving Netdump Performance with iflib} BSDCan 2018 AsiaBSDCon 2018\\
-%% \begin{tabular}{l} 
-%% {\em https://github.com/gwydirsam/bsd-coredump-history} \
-%% \end{tabular}
-%% \\
-\vspace{-.16in}
-\begin{itemize}
-\item Improved Netdump performance by 1.7x in ideal conditions
-  %% \item BSDCan 2018, University of Ottawa, Ottawa, Canada
-  %% \item AsiaBSDCon 2018, Tokyo University of Science, Tokyo, Japan
-\end{itemize}
-\vspace{-.10in}
-
-\color{black}
-{\bf Participating in Open Source Software} Horizon School of Technology \\
-\vspace{-.16in}
-\begin{itemize}
-%% \item Horizon School of Technology, San Francisco, USA
-  \item Q\&A with students covering open source software and stories
-\end{itemize}
-\vspace{-.10in}
-
-\color{black}
-{\bf The History and Future of Core Dumps in FreeBSD} \\
-\begin{tabular}{l l l}
-      vBSDCon 2017 & BSDCan 2017 & AsiaBSDCon 2017
-\end{tabular}
-%% \begin{tabular}{l} 
-%% {\em https://github.com/gwydirsam/bsd-coredump-history} \
-%% \end{tabular}
-\\
-\vspace{-.16in}
-\begin{itemize}
-  \item History of core dump feature in BSD and later FreeBSD, illumos and Mac OS X
-  \item Detailed diagrams, feature list and descriptions of core dump procedure
-  %% \item vBSDCon 2017, Verisign, Reston, Virginia, USA
-  %% \item BSDCan 2017, University of Ottawa, Ottawa, Canada
-  %% \item AsiaBSDCon 2017, Tokyo University of Science, Tokyo, Japan
-\end{itemize}
-\vspace{-.10in}
 
 %% \vspace*{.20in}
 %% {\color{Black}
@@ -373,6 +410,7 @@ sam@samgwydir.com & 615 Clayton Street\\
 % \vspace{-0.10in}
 
 % {\bf Github} {\em https://www.github.com/gwydirsam}  \
+%% \vspace{ 0.10in}
 {\bf Github } {\em github.com/gwydirsam}  \
 
 
